@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": [
+      "src"
+  ],
+  "compilerOptions": {
+    "types": ["vite/client", "vue-router"],
+    "moduleResolution": "node",
+    "baseUrl": "."
+  }
+}
+  

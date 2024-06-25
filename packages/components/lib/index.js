@@ -1,0 +1,1 @@
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const e=require("./utils/install.js"),r=require("./installs.js"),t=require("./BaseBreadcrumb/index.js"),s=e.makeInstaller([...r]);exports.TBaseBreadcrumb=t.TBaseBreadcrumb;exports.default=s;

@@ -1,0 +1,39 @@
+{
+  "name": "@brewer/anthill-core",
+  "version": "0.0.3-alpha.1",
+  "description": "蚂蚁窝前端基础组件库",
+  "author": "MoTou",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beerui/anthill-lerna-packages/-/tree/master/packages/core"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "bugs": "https://github.com/beerui/anthill-lerna-packages/-/issues",
+  "main": "lib",
+  "module": "es",
+  "type": "module",
+  "types": "types/index.d.ts",
+  "files": [
+    "es",
+    "lib",
+    "types",
+    "global.d.ts"
+  ],
+  "scripts": {
+    "build": "gulp -f build/gulpfile.js"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.6",
+    "shelljs": "^0.8.5",
+    "tdesign-vue-next": "^1.9.6",
+    "vite": "^5.3.1",
+    "vue-router": "4.1.6"
+  }
+}

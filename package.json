@@ -1,0 +1,24 @@
+{
+  "name": "@brewer/components",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "pnpm --filter=@brewer/* run build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@brewer/anthill-core": "workspace:0.0.3-alpha.1",
+    "@brewer/components": "workspace:*",
+    "vue": "^3.4.29"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.6",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1",
+    "vite-plugin-dts": "^3.7.1",
+    "vue-tsc": "^2.0.21"
+  }
+}
