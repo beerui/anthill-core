@@ -16,7 +16,10 @@
 </template>
 <script lang="ts" setup>
   import { useRouter } from 'vue-router';
-  
+  defineOptions({
+    inheritAttrs: false,
+    name: 'TBaseBreadcrumb'
+  })
   const router = useRouter();
   interface Props {
     list?: any[];

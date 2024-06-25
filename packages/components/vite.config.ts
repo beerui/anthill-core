@@ -9,7 +9,7 @@ export default defineConfig(() => {
       rollupOptions: {
         // 将vue模块排除在打包文件之外，使用用这个组件库的项目的vue模块
         external: ['vue'],
-        
+
         // 输出配置
         output: [
           {
@@ -42,7 +42,7 @@ export default defineConfig(() => {
         // 指定入口文件
         entry: 'src/index.ts',
         // 模块名
-        name: 'ANTHILL_COMPONENTS'
+        // name: 'ANTHILL_COMPONENTS'
       },
     },
     plugins: [

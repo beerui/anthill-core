@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-import { TBaseBreadcrumb } from '@brewer/anthill-core';
 defineProps<{ msg: string }>()
 
 const count = ref(0)
