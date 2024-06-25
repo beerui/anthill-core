@@ -1,15 +1,15 @@
-import { defineComponent as T, resolveComponent as i, openBlock as e, createElementBlock as c, createElementVNode as y, normalizeStyle as m, toDisplayString as a, renderSlot as $, Fragment as B, renderList as N, createBlock as o, withCtx as n, createVNode as b, mergeProps as r, createTextVNode as d, createCommentVNode as A, withModifiers as k } from "vue";
-const E = { class: "fcb my-table-head-wrapper" }, H = { class: "flex items-center" }, z = { class: "base-table-content" }, D = { key: 1 }, F = { key: 2 }, M = /* @__PURE__ */ T({
+import { defineComponent as S, resolveComponent as i, openBlock as e, createElementBlock as c, createElementVNode as y, normalizeStyle as m, toDisplayString as a, renderSlot as $, Fragment as B, renderList as N, createBlock as o, withCtx as n, createVNode as b, mergeProps as r, createTextVNode as d, createCommentVNode as T, withModifiers as k } from "vue";
+const E = { class: "fcb my-table-head-wrapper" }, H = { class: "flex items-center" }, z = { class: "base-table-content" }, D = { key: 1 }, F = { key: 2 }, M = /* @__PURE__ */ S({
   inheritAttrs: !1,
-  name: "BaseTableHead",
+  name: "TBaseTableHead",
   __name: "BaseTableHead",
   props: {
     config: {}
   },
-  setup(P, { emit: S }) {
+  setup(A, { emit: P }) {
     const C = (p) => {
       _("openPage", p);
-    }, _ = S, u = P;
+    }, _ = P, u = A;
     return (p, f) => {
       var h, V;
       const x = i("t-icon"), l = i("t-button"), v = i("t-dropdown"), w = i("t-badge");
@@ -40,7 +40,7 @@ const E = { class: "fcb my-table-head-wrapper" }, H = { class: "flex items-cente
                       key: 0,
                       style: { "margin-top": "2px", "margin-left": "2px" },
                       name: t.icon
-                    }, null, 8, ["name"])) : A("", !0)
+                    }, null, 8, ["name"])) : T("", !0)
                   ]),
                   _: 2
                 }, 1040)
@@ -118,7 +118,7 @@ const E = { class: "fcb my-table-head-wrapper" }, H = { class: "flex items-cente
                     key: 0,
                     style: { "margin-top": "2px", "margin-left": "2px" },
                     name: t.btn.icn
-                  }, null, 8, ["name"])) : A("", !0)
+                  }, null, 8, ["name"])) : T("", !0)
                 ]),
                 _: 2
               }, 1040)

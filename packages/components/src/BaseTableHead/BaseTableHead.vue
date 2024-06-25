@@ -56,7 +56,7 @@
 
   defineOptions({
     inheritAttrs: false,
-    name: 'BaseTableHead'
+    name: 'TBaseTableHead'
   })
 
   const openPage = (value: any) => {
