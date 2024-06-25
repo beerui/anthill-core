@@ -1,15 +1,15 @@
-import { defineComponent as S, resolveComponent as i, openBlock as e, createElementBlock as c, createElementVNode as y, normalizeStyle as m, toDisplayString as a, renderSlot as $, Fragment as B, renderList as N, createBlock as o, withCtx as n, createVNode as b, mergeProps as r, createTextVNode as d, createCommentVNode as T, withModifiers as k } from "vue";
-const E = { class: "fcb my-table-head-wrapper" }, H = { class: "flex items-center" }, z = { class: "base-table-content" }, D = { key: 1 }, F = { key: 2 }, M = /* @__PURE__ */ S({
+import { defineComponent as T, resolveComponent as i, openBlock as e, createElementBlock as c, createElementVNode as y, normalizeStyle as m, toDisplayString as a, renderSlot as $, Fragment as B, renderList as A, createBlock as o, withCtx as n, createVNode as b, mergeProps as r, createTextVNode as d, createCommentVNode as N, withModifiers as k } from "vue";
+const E = { class: "fcb my-table-head-wrapper" }, H = { class: "flex items-center" }, z = { class: "base-table-content" }, D = { key: 1 }, F = { key: 2 }, M = /* @__PURE__ */ T({
   inheritAttrs: !1,
-  name: "TBaseTableHead",
+  name: "ABaseTableHead",
   __name: "BaseTableHead",
   props: {
     config: {}
   },
-  setup(A, { emit: P }) {
+  setup(P, { emit: S }) {
     const C = (p) => {
       _("openPage", p);
-    }, _ = P, u = A;
+    }, _ = S, u = P;
     return (p, f) => {
       var h, V;
       const x = i("t-icon"), l = i("t-button"), v = i("t-dropdown"), w = i("t-badge");
@@ -22,7 +22,7 @@ const E = { class: "fcb my-table-head-wrapper" }, H = { class: "flex items-cente
           $(p.$slots, "default")
         ]),
         y("div", z, [
-          (e(!0), c(B, null, N(u.config.btn, (t, g) => (e(), c("span", {
+          (e(!0), c(B, null, A(u.config.btn, (t, g) => (e(), c("span", {
             key: g,
             class: "base-table-content__btn"
           }, [
@@ -40,7 +40,7 @@ const E = { class: "fcb my-table-head-wrapper" }, H = { class: "flex items-cente
                       key: 0,
                       style: { "margin-top": "2px", "margin-left": "2px" },
                       name: t.icon
-                    }, null, 8, ["name"])) : T("", !0)
+                    }, null, 8, ["name"])) : N("", !0)
                   ]),
                   _: 2
                 }, 1040)
@@ -104,7 +104,7 @@ const E = { class: "fcb my-table-head-wrapper" }, H = { class: "flex items-cente
               }, 1040, ["onClick"]))
             ]))
           ]))), 128)),
-          (e(!0), c(B, null, N(u.config.dropdown, (t, g) => (e(), o(v, {
+          (e(!0), c(B, null, A(u.config.dropdown, (t, g) => (e(), o(v, {
             key: g,
             class: "base-table-content__btn",
             options: t.options,
@@ -118,7 +118,7 @@ const E = { class: "fcb my-table-head-wrapper" }, H = { class: "flex items-cente
                     key: 0,
                     style: { "margin-top": "2px", "margin-left": "2px" },
                     name: t.btn.icn
-                  }, null, 8, ["name"])) : T("", !0)
+                  }, null, 8, ["name"])) : N("", !0)
                 ]),
                 _: 2
               }, 1040)

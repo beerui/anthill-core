@@ -2,7 +2,7 @@ import { defineComponent as f, resolveComponent as t, openBlock as r, createBloc
 import { useRouter as I } from "vue-router";
 const $ = /* @__PURE__ */ f({
   inheritAttrs: !1,
-  name: "TBaseBreadcrumb",
+  name: "ABaseBreadcrumb",
   __name: "BaseBreadcrumb",
   props: {
     list: {},

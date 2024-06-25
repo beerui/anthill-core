@@ -32,7 +32,7 @@ import {BaseFormItemType} from "../BaseTableHead";
 
 defineOptions({
   inheritAttrs: false,
-  name: 'TBaseSearchBar'
+  name: 'ABaseSearchBar'
 })
 import BaseFormItem from './BaseFormItem.vue';
 type Props = {

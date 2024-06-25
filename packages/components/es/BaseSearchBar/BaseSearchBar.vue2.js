@@ -5,7 +5,7 @@ const U = {
   class: "base-search-operator"
 }, L = /* @__PURE__ */ v({
   inheritAttrs: !1,
-  name: "TBaseSearchBar",
+  name: "ABaseSearchBar",
   __name: "BaseSearchBar",
   props: {
     config: {},

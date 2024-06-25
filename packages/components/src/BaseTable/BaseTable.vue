@@ -27,7 +27,7 @@
 <script lang="ts" setup>
   defineOptions({
     inheritAttrs: false,
-    name: 'TBaseTable'
+    name: 'ABaseTable'
   })
   import { computed, ref } from 'vue';
   import { PageInfo, TableRowData } from 'tdesign-vue-next';

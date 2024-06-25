@@ -55,7 +55,7 @@
 
   defineOptions({
     inheritAttrs: false,
-    name: 'TBaseTableHead'
+    name: 'ABaseTableHead'
   })
   import { DropdownOption } from "tdesign-vue-next";
 

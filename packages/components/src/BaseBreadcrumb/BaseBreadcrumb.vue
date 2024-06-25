@@ -17,7 +17,7 @@
 <script lang="ts" setup>
   defineOptions({
     inheritAttrs: false,
-    name: 'TBaseBreadcrumb'
+    name: 'ABaseBreadcrumb'
   })
   import { useRouter } from 'vue-router';
   const router = useRouter();

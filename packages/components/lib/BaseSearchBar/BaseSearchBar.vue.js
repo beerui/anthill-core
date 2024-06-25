@@ -1,1 +1,1 @@
-"use strict";const e=require("./BaseSearchBar.vue2.js");;/* empty css                    */const r=require("../_virtual/_plugin-vue_export-helper.js"),t=r(e,[["__scopeId","data-v-4efac4f6"]]);module.exports=t;
+"use strict";const e=require("./BaseSearchBar.vue2.js");;/* empty css                    */const r=require("../_virtual/_plugin-vue_export-helper.js"),t=r(e,[["__scopeId","data-v-dd59df3e"]]);module.exports=t;

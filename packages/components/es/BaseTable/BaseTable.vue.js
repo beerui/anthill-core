@@ -1,7 +1,7 @@
 import { defineComponent as k, computed as i, ref as b, resolveComponent as v, openBlock as C, createBlock as x, mergeProps as K } from "vue";
 const D = /* @__PURE__ */ k({
   inheritAttrs: !1,
-  name: "TBaseTable",
+  name: "ABaseTable",
   __name: "BaseTable",
   props: [
     "footerSummary",
