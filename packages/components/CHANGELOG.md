@@ -1,5 +1,11 @@
 # @brewer/anthill-core
 
+## 0.1.2
+
+### Patch Changes
+
+- router
+
 ## 0.1.1
 
 ### Patch Changes

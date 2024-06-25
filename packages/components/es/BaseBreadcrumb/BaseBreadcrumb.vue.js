@@ -1,5 +1,5 @@
 import { defineComponent as f, resolveComponent as t, openBlock as r, createBlock as n, normalizeStyle as B, withCtx as o, createVNode as m, createElementBlock as h, Fragment as k, renderList as y, createTextVNode as c, toDisplayString as w, renderSlot as g, createCommentVNode as C } from "vue";
-import { useRouter as I } from "../node_modules/.pnpm/vue-router@4.1.6_vue@3.4.30/node_modules/vue-router/dist/vue-router.js";
+import { useRouter as I } from "vue-router";
 const $ = /* @__PURE__ */ f({
   inheritAttrs: !1,
   name: "TBaseBreadcrumb",
