@@ -15,11 +15,11 @@
     </t-row>
 </template>
 <script lang="ts" setup>
-  import { useRouter } from 'vue-router';
   defineOptions({
     inheritAttrs: false,
     name: 'TBaseBreadcrumb'
   })
+  import { useRouter } from 'vue-router';
   const router = useRouter();
   interface Props {
     list?: any[];
@@ -36,4 +36,3 @@
     mb: 20
   });
 </script>
-  

@@ -51,13 +51,13 @@
   </div>
 </template>
 <script lang="ts" setup>
-  import { DropdownOption } from "tdesign-vue-next";
-  import { ConfigType } from '../../global';
+  import {ConfigType} from "./BaseTableHead";
 
   defineOptions({
     inheritAttrs: false,
     name: 'TBaseTableHead'
   })
+  import { DropdownOption } from "tdesign-vue-next";
 
   const openPage = (value: any) => {
     emits('openPage', value);

@@ -5,12 +5,15 @@ import { ComponentOptionsBase } from 'vue';
 import { ComponentOptionsMixin } from 'vue';
 import { CreateComponentPublicInstance } from 'vue';
 import { DefineComponent } from 'vue';
+import { DropdownOption } from 'tdesign-vue-next';
 import { ExtractPropTypes } from 'vue';
 import { Plugin as Plugin_2 } from 'vue';
 import { PropType } from 'vue';
 import { PublicProps } from 'vue';
 import { TdButtonProps } from 'tdesign-vue-next';
 import { TdFormItemProps } from 'tdesign-vue-next';
+import { TdLinkProps } from 'tdesign-vue-next';
+import { TdPopconfirmProps } from 'tdesign-vue-next';
 import { VNodeProps } from 'vue';
 
 declare const __VLS_component: DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
@@ -35,8 +38,8 @@ declare const __VLS_component_3: DefineComponent<__VLS_WithDefaults_2<__VLS_Type
     hasBtn: boolean;
     btnSpan: number;
 }>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
-    reset: (...args: any[]) => void;
     submit: (...args: any[]) => void;
+    reset: (...args: any[]) => void;
 }, string, PublicProps, Readonly< ExtractPropTypes<__VLS_WithDefaults_2<__VLS_TypePropsToRuntimeProps_3<Props_2>, {
     hasBtn: boolean;
     btnSpan: number;
@@ -178,31 +181,18 @@ export declare type BaseFormItemPropsEmits = {
     'change': [value: any];
 };
 
-declare type BaseFormItemType = {
+export declare type BaseFormItemType = {
     name?: string;
     value: any;
     typeValue?: any;
-    type:
-    | 'SLOT'
-    | 'INPUT'
-    | 'SELECT'
-    | 'DATE_PICKER'
-    | 'DATE_RANGE_PICKER'
-    | 'CASCADER'
-    | 'ORGANIZE_TREE'
-    | 'RADIO'
-    | 'CHECKBOX'
-    | 'TREE_SELECT'
-    | 'DROPDOWN'
-    | 'TYPE_SELECT'
-    | 'TYPE_INPUT';
+    type: 'SLOT' | 'INPUT' | 'SELECT' | 'DATE_PICKER' | 'DATE_RANGE_PICKER' | 'CASCADER' | 'ORGANIZE_TREE' | 'RADIO' | 'CHECKBOX' | 'TREE_SELECT' | 'DROPDOWN' | 'TYPE_SELECT' | 'TYPE_INPUT';
     label?: string;
     typeWidth?: string;
     appendShow?: boolean;
     appendText?: string;
     default?: any;
     attrs?: any;
-    trigger?: string; // immediately-value变更后立即触发
+    trigger?: string;
     showLabel?: boolean;
     span?: number;
 } & TdFormItemProps;
@@ -264,7 +254,7 @@ export declare interface BaseTableProps {
     'tableRef'?: any;
 }
 
-declare type BTN_LIST_BTN_TYPE = {
+export declare type BTN_LIST_BTN_TYPE = {
     attrs?: TdButtonProps;
     event?: any;
     trigger?: any;
@@ -286,15 +276,22 @@ declare type BTN_LIST_BTN_TYPE = {
     acceptRegex?: any;
 };
 
-declare type BTN_LIST_TYPE = {
+export declare type BTN_LIST_TYPE = {
     title?: string;
     btn?: BTN_LIST_BTN_TYPE[];
     search?: BaseFormItemType[];
-    dropdown?: { btn: BTN_LIST_BTN_TYPE; options: { content: string; value: any; event: any }[] }[];
+    dropdown?: {
+        btn: BTN_LIST_BTN_TYPE;
+        options: {
+            content: string;
+            value: any;
+            event: any;
+        }[];
+    }[];
     style?: any;
 };
 
-declare type ConfigType = {
+export declare type ConfigType = {
     config: BTN_LIST_TYPE;
 };
 
@@ -382,6 +379,15 @@ declare const _default_6: DefineComponent<__VLS_TypePropsToRuntimeProps_4<{
     "onUpdate:modelValue"?: ((value: any) => any) | undefined;
     "onUpdate:typeValue"?: ((value: any) => any) | undefined;
 }, {}, {}>;
+
+export declare type OperatorConfigItem = {
+    name: string;
+    pop?: {
+        show: boolean;
+        showType?: string;
+    } & TdPopconfirmProps & DropdownOption;
+    attrs?: TdLinkProps;
+};
 
 declare interface Props {
     list?: any[];
@@ -514,8 +520,8 @@ export declare const TBaseSearchBar: SFCWithInstall<{
         onReset?: ((...args: any[]) => any) | undefined;
         onSubmit?: ((...args: any[]) => any) | undefined;
     }, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
-        reset: (...args: any[]) => void;
         submit: (...args: any[]) => void;
+        reset: (...args: any[]) => void;
     }, VNodeProps & AllowedComponentProps & ComponentCustomProps & Readonly< ExtractPropTypes<{
         config: {
             type: PropType< BaseFormItemType[]>;
@@ -591,8 +597,8 @@ export declare const TBaseSearchBar: SFCWithInstall<{
     onReset?: ((...args: any[]) => any) | undefined;
     onSubmit?: ((...args: any[]) => any) | undefined;
 }, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
-    reset: (...args: any[]) => void;
     submit: (...args: any[]) => void;
+    reset: (...args: any[]) => void;
 }, string, {
     hasBtn: boolean;
     btnSpan: number;

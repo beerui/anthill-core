@@ -2,7 +2,7 @@
 import TBaseSearchBarProps from './BaseSearchBar.vue';
 // @ts-ignore
 import BaseFormItem from './BaseFormItem.vue';
-import { BaseFormItemType } from '../../global';
+import {BaseFormItemType} from "../BaseTableHead";
 
 /**
  * 定义props类型

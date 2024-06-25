@@ -28,12 +28,13 @@
   </t-form>
 </template>
 <script lang="ts" setup>
-import BaseFormItem from './BaseFormItem.vue';
-import { BaseFormItemType } from '../../global';
+import {BaseFormItemType} from "../BaseTableHead";
+
 defineOptions({
   inheritAttrs: false,
   name: 'TBaseSearchBar'
 })
+import BaseFormItem from './BaseFormItem.vue';
 type Props = {
   config: BaseFormItemType[];
   hasBtn?: boolean;
