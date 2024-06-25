@@ -1,4 +1,6 @@
+// @ts-ignore
 import TBaseSearchBarProps from './BaseSearchBar.vue';
+// @ts-ignore
 import BaseFormItem from './BaseFormItem.vue';
 import { BaseFormItemType } from '../../global';
 

@@ -1,3 +1,4 @@
+// @ts-ignore
 import BaseTable from './BaseTable.vue';
 
 /**

@@ -1,14 +1,16 @@
-import { makeInstaller as e } from "./utils/install.js";
-import r from "./installs.js";
-import { TBaseBreadcrumb as f } from "./BaseBreadcrumb/index.js";
-import { TBaseTableHead as p } from "./BaseTableHead/index.js";
+import { makeInstaller as r } from "./utils/install.js";
+import e from "./installs.js";
+import { TBaseBreadcrumb as p } from "./BaseBreadcrumb/index.js";
+import { TBaseTableHead as l } from "./BaseTableHead/index.js";
 import { TBaseTable as B } from "./BaseTable/index.js";
 import { TBaseSearchBar as d } from "./BaseSearchBar/index.js";
-const t = e([...r]);
+import { TBaseOperator as n } from "./BaseOperator/index.js";
+const t = r([...e]);
 export {
-  f as TBaseBreadcrumb,
+  p as TBaseBreadcrumb,
+  n as TBaseOperator,
   d as TBaseSearchBar,
   B as TBaseTable,
-  p as TBaseTableHead,
+  l as TBaseTableHead,
   t as default
 };

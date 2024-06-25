@@ -1,3 +1,4 @@
+// @ts-ignore
 import BaseTableHead from './BaseTableHead.vue';
 import { ConfigType } from '../../global';
 

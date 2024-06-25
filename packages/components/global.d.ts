@@ -16,7 +16,7 @@ declare module 'vue' {
 }
 
 
-export type ConfigType = {
+export declare type ConfigType = {
     config: BTN_LIST_TYPE;
 };
 export declare type OperatorConfigItem = {
@@ -26,7 +26,7 @@ export declare type OperatorConfigItem = {
 };
 
 
-export type BaseFormItemType = {
+export declare type BaseFormItemType = {
     name?: string;
     value: any;
     typeValue?: any;
@@ -56,7 +56,7 @@ export type BaseFormItemType = {
 } & TdFormItemProps;
 
 
-export type BTN_LIST_BTN_TYPE = {
+export declare type BTN_LIST_BTN_TYPE = {
     attrs?: TdButtonProps;
     event?: any;
     trigger?: any;
@@ -78,7 +78,7 @@ export type BTN_LIST_BTN_TYPE = {
     acceptRegex?: any;
 };
 
-export type BTN_LIST_TYPE = {
+export declare type BTN_LIST_TYPE = {
     title?: string;
     btn?: BTN_LIST_BTN_TYPE[];
     search?: BaseFormItemType[];

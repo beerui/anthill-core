@@ -1,13 +1,15 @@
-import { TBaseBreadcrumb as a } from "./BaseBreadcrumb/index.js";
-import { TBaseTable as r } from "./BaseTable/index.js";
+import { TBaseBreadcrumb as r } from "./BaseBreadcrumb/index.js";
+import { TBaseTable as a } from "./BaseTable/index.js";
 import { TBaseTableHead as e } from "./BaseTableHead/index.js";
 import { TBaseSearchBar as o } from "./BaseSearchBar/index.js";
-const T = [
-  a,
+import { TBaseOperator as m } from "./BaseOperator/index.js";
+const f = [
   r,
+  a,
   e,
-  o
+  o,
+  m
 ];
 export {
-  T as default
+  f as default
 };
