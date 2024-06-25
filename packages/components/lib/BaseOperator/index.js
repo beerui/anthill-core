@@ -1,0 +1,1 @@
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const t=require("../utils/install.js"),r=require("./BaseOperator.js"),e=t.withInstall(r);exports.TBaseOperator=e;exports.default=e;
