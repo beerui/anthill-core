@@ -1,0 +1,1 @@
+"use strict";const e=require("./BaseFormItem.vue2.js");;/* empty css                   */const r=require("../_virtual/_plugin-vue_export-helper.js"),t=r(e,[["__scopeId","data-v-d32e20a6"]]);module.exports=t;
