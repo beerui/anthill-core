@@ -1,5 +1,6 @@
 - 打包 npm run build
 - 提交 提交到main分支
+- 选择发包 pnpm changeset add
 - 更新版本 pnpm changeset version 生成CHANGELOG.md文件
 - 推送 CHANGELOG.md
 - 发包 pnpm publish -r
