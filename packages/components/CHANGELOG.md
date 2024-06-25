@@ -1,5 +1,11 @@
 # @brewer/anthill-core
 
+## 0.1.3
+
+### Patch Changes
+
+- tableHead
+
 ## 0.1.2
 
 ### Patch Changes
