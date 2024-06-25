@@ -1,11 +1,11 @@
-import TBaseBreadcrumb from './BaseBreadcrumb'
-import TBaseTable from './BaseTable'
-import TBaseTableHead from './BaseTableHead'
-import TBaseSearchBar from './BaseSearchBar'
+import ABaseBreadcrumb from './BaseBreadcrumb'
+import ABaseTable from './BaseTable'
+import ABaseTableHead from './BaseTableHead'
+import ABaseSearchBar from './BaseSearchBar'
 
 export default [
-    TBaseBreadcrumb,
-    TBaseTable,
-    TBaseTableHead,
-    TBaseSearchBar
+    ABaseBreadcrumb,
+    ABaseTable,
+    ABaseTableHead,
+    ABaseSearchBar
 ]

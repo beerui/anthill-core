@@ -3,6 +3,6 @@ import a from "./BaseTableHead.vue.js";
 /* empty css                   */
 const e = t(a);
 export {
-  e as TBaseTableHead,
+  e as ABaseTableHead,
   e as default
 };

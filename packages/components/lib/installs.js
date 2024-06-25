@@ -1,1 +1,1 @@
-"use strict";const e=require("./BaseBreadcrumb/index.js"),r=require("./BaseTable/index.js"),s=require("./BaseTableHead/index.js"),a=require("./BaseSearchBar/index.js"),i=[e.TBaseBreadcrumb,r.TBaseTable,s.TBaseTableHead,a.TBaseSearchBar];module.exports=i;
+"use strict";const e=require("./BaseBreadcrumb/index.js"),r=require("./BaseTable/index.js"),s=require("./BaseTableHead/index.js"),a=require("./BaseSearchBar/index.js"),i=[e.ABaseBreadcrumb,r.ABaseTable,s.ABaseTableHead,a.ABaseSearchBar];module.exports=i;

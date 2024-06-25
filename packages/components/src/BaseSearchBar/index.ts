@@ -3,8 +3,8 @@ import { withInstall } from '../utils/install'
 // @ts-ignore
 import BaseSearchBar from './BaseSearchBar.vue'
 
-export const TBaseSearchBar = withInstall(BaseSearchBar)
-export default TBaseSearchBar
+export const ABaseSearchBar = withInstall(BaseSearchBar)
+export default ABaseSearchBar
 
 // @ts-ignore
 export * from './BaseSearchBar.vue'

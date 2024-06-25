@@ -1,9 +1,9 @@
 declare module 'vue' {
     export interface GlobalComponents {
-        TBaseBreadcrumb: typeof import('@brewer/anthill-core')['TBaseBreadcrumb']
-        TBaseTableHead: typeof import('@brewer/anthill-core')['TBaseTableHead']
-        TBaseTable: typeof import('@brewer/anthill-core')['TBaseTable']
-        TBaseSearchBar: typeof import('@brewer/anthill-core')['TBaseSearchBar']
+        ABaseBreadcrumb: typeof import('@brewer/anthill-core')['ABaseBreadcrumb']
+        ABaseTableHead: typeof import('@brewer/anthill-core')['ABaseTableHead']
+        ABaseTable: typeof import('@brewer/anthill-core')['ABaseTable']
+        ABaseSearchBar: typeof import('@brewer/anthill-core')['ABaseSearchBar']
     }
 
     interface ComponentCustomProperties {

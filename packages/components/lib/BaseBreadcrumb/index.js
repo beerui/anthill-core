@@ -1,1 +1,1 @@
-"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const t=require("../utils/install.js"),r=require("./BaseBreadcrumb.vue.js"),e=t.withInstall(r);exports.TBaseBreadcrumb=e;exports.default=e;
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const t=require("../utils/install.js"),r=require("./BaseBreadcrumb.vue.js"),e=t.withInstall(r);exports.ABaseBreadcrumb=e;exports.default=e;

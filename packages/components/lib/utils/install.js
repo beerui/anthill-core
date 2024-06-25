@@ -1,1 +1,1 @@
-"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const o=(t,n)=>(t.install=e=>{for(const l of[t,...Object.values({})])e.component(l.name,l)},t),s=(t=[])=>({install:e=>{console.log(t),t.forEach(l=>e.use(l))}});exports.makeInstaller=s;exports.withInstall=o;
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const s=(t,n)=>(t.install=l=>{for(const e of[t,...Object.values({})])l.component(e.name,e)},t),o=(t=[])=>({install:l=>{t.forEach(e=>l.use(e))}});exports.makeInstaller=o;exports.withInstall=s;

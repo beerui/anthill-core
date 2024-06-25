@@ -1,12 +1,12 @@
-const n = (t, e) => (t.install = (o) => {
-  for (const l of [t, ...Object.values({})])
-    o.component(l.name, l);
+const o = (t, l) => (t.install = (e) => {
+  for (const n of [t, ...Object.values({})])
+    e.component(n.name, n);
 }, t), s = (t = []) => ({
-  install: (o) => {
-    console.log(t), t.forEach((l) => o.use(l));
+  install: (e) => {
+    t.forEach((n) => e.use(n));
   }
 });
 export {
   s as makeInstaller,
-  n as withInstall
+  o as withInstall
 };

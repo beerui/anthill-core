@@ -149,6 +149,311 @@ declare type __VLS_WithTemplateSlots_3<T, S> = T & {
     };
 };
 
+export declare const ABaseBreadcrumb: SFCWithInstall<{
+    new (...args: any[]): CreateComponentPublicInstance<Readonly< ExtractPropTypes<{
+        list: {
+            type: PropType<any[]>;
+        };
+        isBack: {
+            type: PropType<boolean>;
+            default: boolean;
+        };
+        maxItemWidth: {
+            type: PropType<string>;
+            default: string;
+        };
+        mb: {
+            type: PropType<number>;
+            default: number;
+        };
+    }>>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, VNodeProps & AllowedComponentProps & ComponentCustomProps & Readonly< ExtractPropTypes<{
+        list: {
+            type: PropType<any[]>;
+        };
+        isBack: {
+            type: PropType<boolean>;
+            default: boolean;
+        };
+        maxItemWidth: {
+            type: PropType<string>;
+            default: string;
+        };
+        mb: {
+            type: PropType<number>;
+            default: number;
+        };
+    }>>, {
+        isBack: boolean;
+        maxItemWidth: string;
+        mb: number;
+    }, true, {}, {}, {
+        P: {};
+        B: {};
+        D: {};
+        C: {};
+        M: {};
+        Defaults: {};
+    }, Readonly< ExtractPropTypes<{
+        list: {
+            type: PropType<any[]>;
+        };
+        isBack: {
+            type: PropType<boolean>;
+            default: boolean;
+        };
+        maxItemWidth: {
+            type: PropType<string>;
+            default: string;
+        };
+        mb: {
+            type: PropType<number>;
+            default: number;
+        };
+    }>>, {}, {}, {}, {}, {
+        isBack: boolean;
+        maxItemWidth: string;
+        mb: number;
+    }>;
+    __isFragment?: never;
+    __isTeleport?: never;
+    __isSuspense?: never;
+} & ComponentOptionsBase<Readonly< ExtractPropTypes<{
+    list: {
+        type: PropType<any[]>;
+    };
+    isBack: {
+        type: PropType<boolean>;
+        default: boolean;
+    };
+    maxItemWidth: {
+        type: PropType<string>;
+        default: string;
+    };
+    mb: {
+        type: PropType<number>;
+        default: number;
+    };
+}>>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, {
+    isBack: boolean;
+    maxItemWidth: string;
+    mb: number;
+}, {}, string, {}> & VNodeProps & AllowedComponentProps & ComponentCustomProps & (new () => {
+    $slots: {
+        right?(_: {}): any;
+    };
+})> & Record<string, any>;
+
+export declare const ABaseSearchBar: SFCWithInstall<{
+    new (...args: any[]): CreateComponentPublicInstance<Readonly< ExtractPropTypes<{
+        config: {
+            type: PropType< BaseFormItemType[]>;
+            required: true;
+        };
+        hasBtn: {
+            type: PropType<boolean>;
+            default: boolean;
+        };
+        btnBoxStyle: {
+            type: PropType<any>;
+        };
+        btnSpan: {
+            type: PropType<number>;
+            default: number;
+        };
+    }>> & {
+        onReset?: ((...args: any[]) => any) | undefined;
+        onSubmit?: ((...args: any[]) => any) | undefined;
+    }, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
+        submit: (...args: any[]) => void;
+        reset: (...args: any[]) => void;
+    }, VNodeProps & AllowedComponentProps & ComponentCustomProps & Readonly< ExtractPropTypes<{
+        config: {
+            type: PropType< BaseFormItemType[]>;
+            required: true;
+        };
+        hasBtn: {
+            type: PropType<boolean>;
+            default: boolean;
+        };
+        btnBoxStyle: {
+            type: PropType<any>;
+        };
+        btnSpan: {
+            type: PropType<number>;
+            default: number;
+        };
+    }>> & {
+        onReset?: ((...args: any[]) => any) | undefined;
+        onSubmit?: ((...args: any[]) => any) | undefined;
+    }, {
+        hasBtn: boolean;
+        btnSpan: number;
+    }, true, {}, {}, {
+        P: {};
+        B: {};
+        D: {};
+        C: {};
+        M: {};
+        Defaults: {};
+    }, Readonly< ExtractPropTypes<{
+        config: {
+            type: PropType< BaseFormItemType[]>;
+            required: true;
+        };
+        hasBtn: {
+            type: PropType<boolean>;
+            default: boolean;
+        };
+        btnBoxStyle: {
+            type: PropType<any>;
+        };
+        btnSpan: {
+            type: PropType<number>;
+            default: number;
+        };
+    }>> & {
+        onReset?: ((...args: any[]) => any) | undefined;
+        onSubmit?: ((...args: any[]) => any) | undefined;
+    }, {}, {}, {}, {}, {
+        hasBtn: boolean;
+        btnSpan: number;
+    }>;
+    __isFragment?: never;
+    __isTeleport?: never;
+    __isSuspense?: never;
+} & ComponentOptionsBase<Readonly< ExtractPropTypes<{
+    config: {
+        type: PropType< BaseFormItemType[]>;
+        required: true;
+    };
+    hasBtn: {
+        type: PropType<boolean>;
+        default: boolean;
+    };
+    btnBoxStyle: {
+        type: PropType<any>;
+    };
+    btnSpan: {
+        type: PropType<number>;
+        default: number;
+    };
+}>> & {
+    onReset?: ((...args: any[]) => any) | undefined;
+    onSubmit?: ((...args: any[]) => any) | undefined;
+}, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
+    submit: (...args: any[]) => void;
+    reset: (...args: any[]) => void;
+}, string, {
+    hasBtn: boolean;
+    btnSpan: number;
+}, {}, string, {}> & VNodeProps & AllowedComponentProps & ComponentCustomProps & (new () => {
+    $slots: Partial<Record<string, (_: {
+        data: BaseFormItemType;
+    }) => any>> & {
+        btnPre?(_: {}): any;
+        default?(_: {}): any;
+    };
+})> & Record<string, any>;
+
+export declare const ABaseTable: SFCWithInstall<DefineComponent<Readonly<{
+    data?: any;
+    footerSummary?: any;
+    fixedRows?: any;
+    footData?: any;
+    columns?: any;
+    dataLoading?: any;
+    pagination?: any;
+    rowKey?: any;
+    selectedRowKeys?: any;
+    editableRowKeys?: any;
+    tableRef?: any;
+}>, {
+    triggerRowValidate: (id: any) => void;
+}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
+    change: (...args: any[]) => void;
+    "page-change": (...args: any[]) => void;
+    "select-change": (...args: any[]) => void;
+    "row-edit": (...args: any[]) => void;
+    "row-validate": (...args: any[]) => void;
+    validate: (...args: any[]) => void;
+    "cell-click": (...args: any[]) => void;
+}, string, PublicProps, Readonly< ExtractPropTypes<Readonly<{
+    data?: any;
+    footerSummary?: any;
+    fixedRows?: any;
+    footData?: any;
+    columns?: any;
+    dataLoading?: any;
+    pagination?: any;
+    rowKey?: any;
+    selectedRowKeys?: any;
+    editableRowKeys?: any;
+    tableRef?: any;
+}>>> & {
+    onChange?: ((...args: any[]) => any) | undefined;
+    "onPage-change"?: ((...args: any[]) => any) | undefined;
+    "onSelect-change"?: ((...args: any[]) => any) | undefined;
+    "onRow-edit"?: ((...args: any[]) => any) | undefined;
+    "onRow-validate"?: ((...args: any[]) => any) | undefined;
+    onValidate?: ((...args: any[]) => any) | undefined;
+    "onCell-click"?: ((...args: any[]) => any) | undefined;
+}, {
+    readonly data?: any;
+    readonly footerSummary?: any;
+    readonly fixedRows?: any;
+    readonly footData?: any;
+    readonly columns?: any;
+    readonly dataLoading?: any;
+    readonly pagination?: any;
+    readonly rowKey?: any;
+    readonly selectedRowKeys?: any;
+    readonly editableRowKeys?: any;
+    readonly tableRef?: any;
+}, {}>> & Record<string, any>;
+
+export declare const ABaseTableHead: SFCWithInstall<{
+    new (...args: any[]): CreateComponentPublicInstance<Readonly< ExtractPropTypes<{
+        config: {
+            type: PropType<BTN_LIST_TYPE>;
+            required: true;
+        };
+    }>>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
+        [x: string]: (event: any) => void;
+    }, VNodeProps & AllowedComponentProps & ComponentCustomProps & Readonly< ExtractPropTypes<{
+        config: {
+            type: PropType<BTN_LIST_TYPE>;
+            required: true;
+        };
+    }>>, {}, true, {}, {}, {
+        P: {};
+        B: {};
+        D: {};
+        C: {};
+        M: {};
+        Defaults: {};
+    }, Readonly< ExtractPropTypes<{
+        config: {
+            type: PropType<BTN_LIST_TYPE>;
+            required: true;
+        };
+    }>>, {}, {}, {}, {}, {}>;
+    __isFragment?: never;
+    __isTeleport?: never;
+    __isSuspense?: never;
+} & ComponentOptionsBase<Readonly< ExtractPropTypes<{
+    config: {
+        type: PropType<BTN_LIST_TYPE>;
+        required: true;
+    };
+}>>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
+    [x: string]: (event: any) => void;
+}, string, {}, {}, string, {}> & VNodeProps & AllowedComponentProps & ComponentCustomProps & (new () => {
+    $slots: {
+        default?(_: {}): any;
+        btns?(_: {}): any;
+    };
+})> & Record<string, any>;
+
 /**
  * 定义instance类型
  */
@@ -405,212 +710,6 @@ declare type Props_2 = {
 
 declare type SFCWithInstall<T> = T & Plugin_2;
 
-export declare const TBaseBreadcrumb: SFCWithInstall<{
-    new (...args: any[]): CreateComponentPublicInstance<Readonly< ExtractPropTypes<{
-        list: {
-            type: PropType<any[]>;
-        };
-        isBack: {
-            type: PropType<boolean>;
-            default: boolean;
-        };
-        maxItemWidth: {
-            type: PropType<string>;
-            default: string;
-        };
-        mb: {
-            type: PropType<number>;
-            default: number;
-        };
-    }>>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, VNodeProps & AllowedComponentProps & ComponentCustomProps & Readonly< ExtractPropTypes<{
-        list: {
-            type: PropType<any[]>;
-        };
-        isBack: {
-            type: PropType<boolean>;
-            default: boolean;
-        };
-        maxItemWidth: {
-            type: PropType<string>;
-            default: string;
-        };
-        mb: {
-            type: PropType<number>;
-            default: number;
-        };
-    }>>, {
-        isBack: boolean;
-        maxItemWidth: string;
-        mb: number;
-    }, true, {}, {}, {
-        P: {};
-        B: {};
-        D: {};
-        C: {};
-        M: {};
-        Defaults: {};
-    }, Readonly< ExtractPropTypes<{
-        list: {
-            type: PropType<any[]>;
-        };
-        isBack: {
-            type: PropType<boolean>;
-            default: boolean;
-        };
-        maxItemWidth: {
-            type: PropType<string>;
-            default: string;
-        };
-        mb: {
-            type: PropType<number>;
-            default: number;
-        };
-    }>>, {}, {}, {}, {}, {
-        isBack: boolean;
-        maxItemWidth: string;
-        mb: number;
-    }>;
-    __isFragment?: never;
-    __isTeleport?: never;
-    __isSuspense?: never;
-} & ComponentOptionsBase<Readonly< ExtractPropTypes<{
-    list: {
-        type: PropType<any[]>;
-    };
-    isBack: {
-        type: PropType<boolean>;
-        default: boolean;
-    };
-    maxItemWidth: {
-        type: PropType<string>;
-        default: string;
-    };
-    mb: {
-        type: PropType<number>;
-        default: number;
-    };
-}>>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, {
-    isBack: boolean;
-    maxItemWidth: string;
-    mb: number;
-}, {}, string, {}> & VNodeProps & AllowedComponentProps & ComponentCustomProps & (new () => {
-    $slots: {
-        right?(_: {}): any;
-    };
-})> & Record<string, any>;
-
-export declare const TBaseSearchBar: SFCWithInstall<{
-    new (...args: any[]): CreateComponentPublicInstance<Readonly< ExtractPropTypes<{
-        config: {
-            type: PropType< BaseFormItemType[]>;
-            required: true;
-        };
-        hasBtn: {
-            type: PropType<boolean>;
-            default: boolean;
-        };
-        btnBoxStyle: {
-            type: PropType<any>;
-        };
-        btnSpan: {
-            type: PropType<number>;
-            default: number;
-        };
-    }>> & {
-        onReset?: ((...args: any[]) => any) | undefined;
-        onSubmit?: ((...args: any[]) => any) | undefined;
-    }, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
-        submit: (...args: any[]) => void;
-        reset: (...args: any[]) => void;
-    }, VNodeProps & AllowedComponentProps & ComponentCustomProps & Readonly< ExtractPropTypes<{
-        config: {
-            type: PropType< BaseFormItemType[]>;
-            required: true;
-        };
-        hasBtn: {
-            type: PropType<boolean>;
-            default: boolean;
-        };
-        btnBoxStyle: {
-            type: PropType<any>;
-        };
-        btnSpan: {
-            type: PropType<number>;
-            default: number;
-        };
-    }>> & {
-        onReset?: ((...args: any[]) => any) | undefined;
-        onSubmit?: ((...args: any[]) => any) | undefined;
-    }, {
-        hasBtn: boolean;
-        btnSpan: number;
-    }, true, {}, {}, {
-        P: {};
-        B: {};
-        D: {};
-        C: {};
-        M: {};
-        Defaults: {};
-    }, Readonly< ExtractPropTypes<{
-        config: {
-            type: PropType< BaseFormItemType[]>;
-            required: true;
-        };
-        hasBtn: {
-            type: PropType<boolean>;
-            default: boolean;
-        };
-        btnBoxStyle: {
-            type: PropType<any>;
-        };
-        btnSpan: {
-            type: PropType<number>;
-            default: number;
-        };
-    }>> & {
-        onReset?: ((...args: any[]) => any) | undefined;
-        onSubmit?: ((...args: any[]) => any) | undefined;
-    }, {}, {}, {}, {}, {
-        hasBtn: boolean;
-        btnSpan: number;
-    }>;
-    __isFragment?: never;
-    __isTeleport?: never;
-    __isSuspense?: never;
-} & ComponentOptionsBase<Readonly< ExtractPropTypes<{
-    config: {
-        type: PropType< BaseFormItemType[]>;
-        required: true;
-    };
-    hasBtn: {
-        type: PropType<boolean>;
-        default: boolean;
-    };
-    btnBoxStyle: {
-        type: PropType<any>;
-    };
-    btnSpan: {
-        type: PropType<number>;
-        default: number;
-    };
-}>> & {
-    onReset?: ((...args: any[]) => any) | undefined;
-    onSubmit?: ((...args: any[]) => any) | undefined;
-}, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
-    submit: (...args: any[]) => void;
-    reset: (...args: any[]) => void;
-}, string, {
-    hasBtn: boolean;
-    btnSpan: number;
-}, {}, string, {}> & VNodeProps & AllowedComponentProps & ComponentCustomProps & (new () => {
-    $slots: Partial<Record<string, (_: {
-        data: BaseFormItemType;
-    }) => any>> & {
-        btnPre?(_: {}): any;
-        default?(_: {}): any;
-    };
-})> & Record<string, any>;
-
 /**
  * 定义instance类型
  */
@@ -633,104 +732,5 @@ export declare type TBaseSearchBarPropsEmits = {
     'reset': [value: any];
     'submit': [value: any];
 };
-
-export declare const TBaseTable: SFCWithInstall<DefineComponent<Readonly<{
-    data?: any;
-    footerSummary?: any;
-    fixedRows?: any;
-    footData?: any;
-    columns?: any;
-    dataLoading?: any;
-    pagination?: any;
-    rowKey?: any;
-    selectedRowKeys?: any;
-    editableRowKeys?: any;
-    tableRef?: any;
-}>, {
-    triggerRowValidate: (id: any) => void;
-}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
-    change: (...args: any[]) => void;
-    "page-change": (...args: any[]) => void;
-    "select-change": (...args: any[]) => void;
-    "row-edit": (...args: any[]) => void;
-    "row-validate": (...args: any[]) => void;
-    validate: (...args: any[]) => void;
-    "cell-click": (...args: any[]) => void;
-}, string, PublicProps, Readonly< ExtractPropTypes<Readonly<{
-    data?: any;
-    footerSummary?: any;
-    fixedRows?: any;
-    footData?: any;
-    columns?: any;
-    dataLoading?: any;
-    pagination?: any;
-    rowKey?: any;
-    selectedRowKeys?: any;
-    editableRowKeys?: any;
-    tableRef?: any;
-}>>> & {
-    onChange?: ((...args: any[]) => any) | undefined;
-    "onPage-change"?: ((...args: any[]) => any) | undefined;
-    "onSelect-change"?: ((...args: any[]) => any) | undefined;
-    "onRow-edit"?: ((...args: any[]) => any) | undefined;
-    "onRow-validate"?: ((...args: any[]) => any) | undefined;
-    onValidate?: ((...args: any[]) => any) | undefined;
-    "onCell-click"?: ((...args: any[]) => any) | undefined;
-}, {
-    readonly data?: any;
-    readonly footerSummary?: any;
-    readonly fixedRows?: any;
-    readonly footData?: any;
-    readonly columns?: any;
-    readonly dataLoading?: any;
-    readonly pagination?: any;
-    readonly rowKey?: any;
-    readonly selectedRowKeys?: any;
-    readonly editableRowKeys?: any;
-    readonly tableRef?: any;
-}, {}>> & Record<string, any>;
-
-export declare const TBaseTableHead: SFCWithInstall<{
-    new (...args: any[]): CreateComponentPublicInstance<Readonly< ExtractPropTypes<{
-        config: {
-            type: PropType<BTN_LIST_TYPE>;
-            required: true;
-        };
-    }>>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
-        [x: string]: (event: any) => void;
-    }, VNodeProps & AllowedComponentProps & ComponentCustomProps & Readonly< ExtractPropTypes<{
-        config: {
-            type: PropType<BTN_LIST_TYPE>;
-            required: true;
-        };
-    }>>, {}, true, {}, {}, {
-        P: {};
-        B: {};
-        D: {};
-        C: {};
-        M: {};
-        Defaults: {};
-    }, Readonly< ExtractPropTypes<{
-        config: {
-            type: PropType<BTN_LIST_TYPE>;
-            required: true;
-        };
-    }>>, {}, {}, {}, {}, {}>;
-    __isFragment?: never;
-    __isTeleport?: never;
-    __isSuspense?: never;
-} & ComponentOptionsBase<Readonly< ExtractPropTypes<{
-    config: {
-        type: PropType<BTN_LIST_TYPE>;
-        required: true;
-    };
-}>>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
-    [x: string]: (event: any) => void;
-}, string, {}, {}, string, {}> & VNodeProps & AllowedComponentProps & ComponentCustomProps & (new () => {
-    $slots: {
-        default?(_: {}): any;
-        btns?(_: {}): any;
-    };
-})> & Record<string, any>;
 
 export { }

@@ -3,8 +3,8 @@ import { withInstall } from '../utils/install'
 // @ts-ignore
 import BaseBreadcrumb from './BaseBreadcrumb.vue'
 
-export const TBaseBreadcrumb = withInstall(BaseBreadcrumb)
-export default TBaseBreadcrumb
+export const ABaseBreadcrumb = withInstall(BaseBreadcrumb)
+export default ABaseBreadcrumb
 
 // @ts-ignore
 export * from './BaseBreadcrumb.vue'
