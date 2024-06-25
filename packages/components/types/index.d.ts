@@ -5,15 +5,12 @@ import { ComponentOptionsBase } from 'vue';
 import { ComponentOptionsMixin } from 'vue';
 import { CreateComponentPublicInstance } from 'vue';
 import { DefineComponent } from 'vue';
-import { DropdownOption } from 'tdesign-vue-next';
 import { ExtractPropTypes } from 'vue';
 import { Plugin as Plugin_2 } from 'vue';
 import { PropType } from 'vue';
 import { PublicProps } from 'vue';
 import { TdButtonProps } from 'tdesign-vue-next';
 import { TdFormItemProps } from 'tdesign-vue-next';
-import { TdLinkProps } from 'tdesign-vue-next';
-import { TdPopconfirmProps } from 'tdesign-vue-next';
 import { VNodeProps } from 'vue';
 
 declare const __VLS_component: DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
@@ -386,12 +383,6 @@ declare const _default_6: DefineComponent<__VLS_TypePropsToRuntimeProps_4<{
     "onUpdate:typeValue"?: ((value: any) => any) | undefined;
 }, {}, {}>;
 
-declare type OperatorConfigItem = {
-    name: string;
-    pop?: { show: boolean; showType?: string } & TdPopconfirmProps & DropdownOption;
-    attrs?: TdLinkProps;
-};
-
 declare interface Props {
     list?: any[];
     isBack?: boolean;
@@ -501,8 +492,6 @@ export declare const TBaseBreadcrumb: SFCWithInstall<{
         right?(_: {}): any;
     };
 })> & Record<string, any>;
-
-export declare const TBaseOperator: SFCWithInstall<(configs: OperatorConfigItem[]) => any> & Record<string, any>;
 
 export declare const TBaseSearchBar: SFCWithInstall<{
     new (...args: any[]): CreateComponentPublicInstance<Readonly< ExtractPropTypes<{
