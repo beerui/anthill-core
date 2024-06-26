@@ -9,7 +9,7 @@ const count = ref(0)
 <template>
   <h1>{{ msg }}</h1>
 
-  <t-base-breadcrumb :list="[{ title: 'a', path: '/a'}, { title: 'b', path: '/b'}]"></t-base-breadcrumb>
+  <a-base-breadcrumb :list="[{ title: 'a', path: '/a'}, { title: 'b', path: '/b'}]"></a-base-breadcrumb>
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
     <p>

@@ -28,8 +28,8 @@ declare const __VLS_component_3: DefineComponent<{}, {}, {}, {}, {}, ComponentOp
     submit: (...args: any[]) => void;
     reset: (...args: any[]) => void;
 }, string, PublicProps, Readonly< ExtractPropTypes<{}>> & {
-    onReset?: ((...args: any[]) => any) | undefined;
-    onSubmit?: ((...args: any[]) => any) | undefined;
+    onReset?: (...args: any[]) => any;
+    onSubmit?: (...args: any[]) => any;
 }, {}, {}>;
 
 declare type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
@@ -119,14 +119,14 @@ export declare const ABaseBreadcrumb: SFCWithInstall<{
 
 export declare const ABaseSearchBar: SFCWithInstall<{
     new (...args: any[]): CreateComponentPublicInstance<Readonly< ExtractPropTypes<{}>> & {
-        onReset?: ((...args: any[]) => any) | undefined;
-        onSubmit?: ((...args: any[]) => any) | undefined;
+        onReset?: (...args: any[]) => any;
+        onSubmit?: (...args: any[]) => any;
     }, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
         submit: (...args: any[]) => void;
         reset: (...args: any[]) => void;
     }, VNodeProps & AllowedComponentProps & ComponentCustomProps & Readonly< ExtractPropTypes<{}>> & {
-        onReset?: ((...args: any[]) => any) | undefined;
-        onSubmit?: ((...args: any[]) => any) | undefined;
+        onReset?: (...args: any[]) => any;
+        onSubmit?: (...args: any[]) => any;
     }, {}, true, {}, {}, {
         P: {};
         B: {};
@@ -135,15 +135,15 @@ export declare const ABaseSearchBar: SFCWithInstall<{
         M: {};
         Defaults: {};
     }, Readonly< ExtractPropTypes<{}>> & {
-        onReset?: ((...args: any[]) => any) | undefined;
-        onSubmit?: ((...args: any[]) => any) | undefined;
+        onReset?: (...args: any[]) => any;
+        onSubmit?: (...args: any[]) => any;
     }, {}, {}, {}, {}, {}>;
     __isFragment?: never;
     __isTeleport?: never;
     __isSuspense?: never;
 } & ComponentOptionsBase<Readonly< ExtractPropTypes<{}>> & {
-    onReset?: ((...args: any[]) => any) | undefined;
-    onSubmit?: ((...args: any[]) => any) | undefined;
+    onReset?: (...args: any[]) => any;
+    onSubmit?: (...args: any[]) => any;
 }, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
     submit: (...args: any[]) => void;
     reset: (...args: any[]) => void;
@@ -235,13 +235,13 @@ export declare const ABaseTable: SFCWithInstall<DefineComponent<{
         type: PropType<any>;
     };
 }>> & {
-    onChange?: ((value: any, item: any) => any) | undefined;
-    "onRow-validate"?: ((params: any) => any) | undefined;
-    "onRow-edit"?: ((params: any) => any) | undefined;
-    onValidate?: ((params: any) => any) | undefined;
-    "onCell-click"?: ((args: any) => any) | undefined;
-    "onSelect-change"?: ((value: any, item: any) => any) | undefined;
-    "onPage-change"?: ((pageInfo: PageInfo, newDataSource: TableRowData[]) => any) | undefined;
+    onChange?: (value: any, item: any) => any;
+    "onRow-validate"?: (params: any) => any;
+    "onRow-edit"?: (params: any) => any;
+    onValidate?: (params: any) => any;
+    "onCell-click"?: (args: any) => any;
+    "onSelect-change"?: (value: any, item: any) => any;
+    "onPage-change"?: (pageInfo: PageInfo, newDataSource: TableRowData[]) => any;
 }, {}, {}>> & Record<string, any>;
 
 export declare const ABaseTableHead: SFCWithInstall<{
@@ -287,18 +287,9 @@ export declare const ABaseTableHead: SFCWithInstall<{
     };
 })> & Record<string, any>;
 
-/**
- * 定义instance类型
- */
 export declare type BaseBreadcrumbInstance = InstanceType<typeof _default_2>;
 
-/**
- * 定义props类型
- */
 export declare interface BaseBreadcrumbProps {
-    /**
-     * 面包屑的路由数据
-     */
     list?: any[];
     isBack?: boolean;
     maxItemWidth?: string;
@@ -335,9 +326,6 @@ export declare type BaseFormItemType = {
     span?: number;
 } & TdFormItemProps;
 
-/**
- * 定义emit类型
- */
 export declare type BaseTableEmits = {
     (e: 'row-validate', params: any): void;
     (e: 'row-edit', params: any): void;
@@ -348,36 +336,18 @@ export declare type BaseTableEmits = {
     (e: 'page-change', pageInfo: PageInfo, newDataSource: TableRowData[]): void;
 };
 
-/**
- * 定义emit类型
- */
 export declare type BaseTableHeadEmits = {
     'openPage': [value: any];
 };
 
-/**
- * 定义instance类型
- */
 export declare type BaseTableHeadInstance = InstanceType<typeof _default_3>;
 
-/**
- * 定义props类型
- */
 export declare interface BaseTableHeadProps {
-    /**
-     * 面包屑的路由数据
-     */
     config: ConfigType;
 }
 
-/**
- * 定义instance类型
- */
 export declare type BaseTableInstance = InstanceType<typeof _default_4>;
 
-/**
- * 定义props类型
- */
 export declare interface BaseTableProps {
     'footerSummary'?: any;
     'fixedRows'?: any;
@@ -453,13 +423,13 @@ declare const _default_4: DefineComponent<__VLS_TypePropsToRuntimeProps_2<BaseTa
     "select-change": (value: any, item: any) => void;
     "page-change": (pageInfo: PageInfo, newDataSource: TableRowData[]) => void;
 }, string, PublicProps, Readonly< ExtractPropTypes<__VLS_TypePropsToRuntimeProps_2<BaseTableProps>>> & {
-    onChange?: ((value: any, item: any) => any) | undefined;
-    "onRow-validate"?: ((params: any) => any) | undefined;
-    "onRow-edit"?: ((params: any) => any) | undefined;
-    onValidate?: ((params: any) => any) | undefined;
-    "onCell-click"?: ((args: any) => any) | undefined;
-    "onSelect-change"?: ((value: any, item: any) => any) | undefined;
-    "onPage-change"?: ((pageInfo: PageInfo, newDataSource: TableRowData[]) => any) | undefined;
+    onChange?: (value: any, item: any) => any;
+    "onRow-validate"?: (params: any) => any;
+    "onRow-edit"?: (params: any) => any;
+    onValidate?: (params: any) => any;
+    "onCell-click"?: (args: any) => any;
+    "onSelect-change"?: (value: any, item: any) => any;
+    "onPage-change"?: (pageInfo: PageInfo, newDataSource: TableRowData[]) => any;
 }, {}, {}>;
 
 declare const _default_5: __VLS_WithTemplateSlots_3<typeof __VLS_component_3, ReturnType<typeof __VLS_template_3>>;
@@ -469,9 +439,9 @@ declare const _default_6: DefineComponent<__VLS_TypePropsToRuntimeProps_3<BaseFo
     "update:typeValue": (value: string) => void;
     change: (value: any) => void;
 }, string, PublicProps, Readonly< ExtractPropTypes<__VLS_TypePropsToRuntimeProps_3<BaseFormItemProps>>> & {
-    onChange?: ((value: any) => any) | undefined;
-    "onUpdate:modelValue"?: ((value: string) => any) | undefined;
-    "onUpdate:typeValue"?: ((value: string) => any) | undefined;
+    onChange?: (value: any) => any;
+    "onUpdate:modelValue"?: (value: string) => any;
+    "onUpdate:typeValue"?: (value: string) => any;
 }, {}, {}>;
 
 export declare type OperatorConfigItem = {
@@ -485,14 +455,8 @@ export declare type OperatorConfigItem = {
 
 declare type SFCWithInstall<T> = T & Plugin_2;
 
-/**
- * 定义instance类型
- */
 export declare type TBaseSearchBarInstance = InstanceType<typeof _default_5>;
 
-/**
- * 定义props类型
- */
 export declare interface TBaseSearchBarProps {
     config?: BaseFormItemType[];
     hasBtn: boolean;
@@ -500,9 +464,6 @@ export declare interface TBaseSearchBarProps {
     btnSpan: number;
 }
 
-/**
- * 定义emit类型
- */
 export declare type TBaseSearchBarPropsEmits = {
     'reset': any;
     'submit': any;
