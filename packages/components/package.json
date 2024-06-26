@@ -21,6 +21,7 @@
     "es",
     "lib",
     "types",
+    "helper",
     "global.d.ts"
   ],
   "scripts": {
