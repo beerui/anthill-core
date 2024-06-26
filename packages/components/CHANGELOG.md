@@ -1,5 +1,11 @@
 # @brewer/anthill-core
 
+## 0.1.7
+
+### Patch Changes
+
+- idea
+
 ## 0.1.6
 
 ### Patch Changes
