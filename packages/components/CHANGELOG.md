@@ -1,5 +1,11 @@
 # @brewer/anthill-core
 
+## 0.1.9
+
+### Patch Changes
+
+- 添加 IDEA 说明文件
+
 ## 0.1.8
 
 ### Patch Changes

@@ -28,10 +28,9 @@
   </t-form>
 </template>
 <script lang="ts" setup>
-import {BaseFormItemType} from "../BaseTableHead";
+import { BaseFormItemType } from "../BaseTableHead";
 
 defineOptions({
-  inheritAttrs: false,
   name: 'ABaseSearchBar'
 })
 import BaseFormItem from './BaseFormItem.vue';

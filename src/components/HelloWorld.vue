@@ -10,6 +10,8 @@ const count = ref(0)
   <h1>{{ msg }}</h1>
 
   <a-base-breadcrumb :list="[{ title: 'a', path: '/a'}, { title: 'b', path: '/b'}]"></a-base-breadcrumb>
+  <ABaseBreadcrumb
+  <a-base-search-bar></a-base-search-bar>
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
     <p>

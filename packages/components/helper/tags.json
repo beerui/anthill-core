@@ -1,0 +1,14 @@
+{
+  "a-base-search-bar": {
+    "attributes": [
+      "container",
+      "content",
+      "default",
+      "offset-bottom",
+      "offset-top",
+      "z-index",
+      "fixed-change"
+    ],
+    "description": "ABaseSearchBar\n\n基础面包屑\n\n[docs](https://beerui.github.io/anthill-docs/components/base/BaseBreadcrumb.html)"
+  }
+}

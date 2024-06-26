@@ -54,7 +54,6 @@
   import { ConfigType } from "./BaseTableHead";
 
   defineOptions({
-    inheritAttrs: false,
     name: 'ABaseTableHead'
   })
   import { DropdownOption } from "tdesign-vue-next";

@@ -28,7 +28,6 @@
 import {BaseTableEmits, BaseTableProps} from "./BaseTable.ts";
 
   defineOptions({
-    inheritAttrs: false,
     name: 'ABaseTable'
   })
   import { computed, ref } from 'vue';

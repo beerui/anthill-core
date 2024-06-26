@@ -1,0 +1,196 @@
+{
+  "$schema": "http://json.schemastore.org/web-types",
+  "framework": "vue",
+  "name": "@brewer/anthill-core",
+  "js-types-syntax": "typescript",
+  "description-markup": "markdown",
+  "contributions": {
+    "html": {
+      "vue-components": [
+        {
+          "name": "a-base-breadcrumb",
+          "source": {
+            "symbol": "ABaseBreadcrumb"
+          },
+          "description": "ABaseBreadcrumb\n\n基础面包屑",
+          "doc-url": "https://beerui.github.io/anthill-docs/components/base/BaseBreadcrumb.html",
+          "props": [
+            {
+              "name": "list",
+              "description": "面包屑配置列表，包含title标题字段、path跳转路径。示例：[{ path: '/a', title: '页面a' }]",
+              "doc-url": "https://beerui.github.io/anthill-docs/components/base/BaseBreadcrumb.html",
+              "type": [
+                "Array"
+              ],
+              "default": "() => []"
+            },
+            {
+              "name": "isBack",
+              "description": "是否展示返回按钮",
+              "type": [
+                "Boolean"
+              ],
+              "default": "false"
+            },
+            {
+              "name": "mb",
+              "description": "距离下方相邻元素距离",
+              "type": [
+                "Number"
+              ],
+              "default": "20"
+            },
+            {
+              "name": "maxItemWidth",
+              "description": "单个最大宽度",
+              "type": [
+                "String"
+              ],
+              "default": "150"
+            }
+          ],
+          "js": {
+            "events": [
+              {
+                "name": "fixed-change",
+                "description": "固定状态发生变化时触发"
+              }
+            ]
+          },
+          "slots": [
+            {
+              "name": "right",
+              "description": "右侧自定义展示内容"
+            },
+            {
+              "name": "default",
+              "description": "内容，同 content"
+            }
+          ]
+        },
+        {
+          "name": "a-base-table-head",
+          "source": {
+            "symbol": "ABaseTableHead"
+          },
+          "description": "ABaseTableHead\n\n基础表格头",
+          "doc-url": "https://beerui.github.io/anthill-docs/components/base/BaseTableHead.html",
+          "props": [
+            {
+              "name": "config",
+              "description": "头部标题、按钮选项等配置。示例：[{ btn: BTN_LIST_BTN_TYPE[], title: '导出', search：BaseFormItemType[], dropdown: { btn: BTN_LIST_BTN_TYPE, options: [{ content: '', value: '', event: '' }], style: null }]",
+              "doc-url": "https://beerui.github.io/anthill-docs/components/base/BaseTableHead.html",
+              "type": [
+                "BTN_LIST_TYPE"
+              ],
+              "default": "() => []"
+            }
+          ],
+          "js": {
+            "events": [
+              {
+                "name": "openPage",
+                "description": "按钮点击触发"
+              }
+            ]
+          },
+          "slots": [
+            {
+              "name": "btns",
+              "description": "右侧自定义展示内容"
+            },
+            {
+              "name": "default",
+              "description": "内容，同 content"
+            }
+          ]
+        },
+        {
+          "name": "a-base-table",
+          "source": {
+            "symbol": "ABaseTable"
+          },
+          "description": "BaseTable\n\n基础表格",
+          "doc-url": "https://beerui.github.io/anthill-docs/components/base/BaseTable.html",
+          "props": [
+            {
+              "name": "attrs",
+              "description": "同TDesign的表格，仅做样式封装",
+              "doc-url": "https://beerui.github.io/anthill-docs/components/base/BaseTable.html",
+              "type": [
+                "TTable"
+              ],
+              "default": "null"
+            }
+          ]
+        },
+        {
+          "name": "a-base-search-bar",
+          "source": {
+            "symbol": "ABaseSearchBar"
+          },
+          "description": "ABaseSearchBar\n\n列表查询搜索组件",
+          "doc-url": "https://beerui.github.io/anthill-docs/components/base/BaseSearchBar.html",
+          "props": [
+            {
+              "name": "config",
+              "description": "搜索条件: 整体配置 BaseFormItem 可以根据name，value，type等配置不同的搜索框\n如：name为'username'，type为'INPUT'，则会生成一个搜索框，name为'username'，type为'SLOT'，则会生成一个slot，可以自定义搜索框内容。示例：[\n\t{\n\t\t\"name\": \"deptName\",\n\t\t\"value\": \"\",\n\t\t\"type\": \"INPUT\",\n\t\t\"label\": \"处理单位\",\n\t\t\"attrs\": {\n\t\t\t\"placeholder\": \"请输入处理单位\"\n\t\t}\n\t},\n\t{\n\t\t\"name\": \"times\",\n\t\t\"value\": [],\n\t\t\"default\": [],\n\t\t\"type\": \"DATE_RANGE_PICKER\",\n\t\t\"label\": \"创建时间\",\n\t\t\"attrs\": {\n\t\t\t\"placeholder\": \"请输入\",\n\t\t\t\"clearable\": true,\n\t\t\t\"enableTimePicker\": true,\n\t\t\t\"pickMonth\": 3\n\t\t}\n\t},\n\t{\n\t\t\"name\": \"timeLimit\",\n\t\t\"value\": \"\",\n\t\t\"type\": \"SELECT\",\n\t\t\"label\": \"处理时限\",\n\t\t\"attrs\": {\n\t\t\t\"options\": [\n\t\t\t\t{\n\t\t\t\t\t\"key\": -1,\n\t\t\t\t\t\"label\": \"已逾期\",\n\t\t\t\t\t\"value\": -1\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"key\": 0,\n\t\t\t\t\t\"label\": \"今天到期\",\n\t\t\t\t\t\"value\": 0\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"key\": 3,\n\t\t\t\t\t\"label\": \"近3天到期\",\n\t\t\t\t\t\"value\": 3\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"key\": 7,\n\t\t\t\t\t\"label\": \"近7天到期\",\n\t\t\t\t\t\"value\": 7\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"key\": 15,\n\t\t\t\t\t\"label\": \"近15天到期\",\n\t\t\t\t\t\"value\": 15\n\t\t\t\t}\n\t\t\t],\n\t\t\t\"clearable\": true\n\t\t}\n\t}\n]",
+              "doc-url": "https://beerui.github.io/anthill-docs/components/base/BaseSearchBar.html",
+              "type": [
+                "BaseFormItemType"
+              ],
+              "default": "() => BaseFormItemType[]"
+            },
+            {
+              "name": "hasBtn",
+              "description": "是否展示按钮",
+              "type": [
+                "Boolean"
+              ],
+              "default": "true"
+            },
+            {
+              "name": "btnBoxStyle",
+              "description": "按钮区额外样式",
+              "type": [
+                "Style"
+              ],
+              "default": "null"
+            },
+            {
+              "name": "btnSpan",
+              "description": "按钮区span占比",
+              "type": [
+                "String"
+              ],
+              "default": "2"
+            }
+          ],
+          "js": {
+            "events": [
+              {
+                "name": "reset",
+                "description": "reset事件"
+              },
+              {
+                "name": "submit",
+                "description": "submit事件"
+              }
+            ]
+          },
+          "slots": [
+            {
+              "name": "SLOT",
+              "description": "子项中的BaseFormItemType 设置：type = SLOT"
+            },
+            {
+              "name": "default",
+              "description": "内容，同 content"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "version": "0.1.8"
+}

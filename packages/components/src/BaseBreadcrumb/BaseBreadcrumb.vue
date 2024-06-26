@@ -18,7 +18,6 @@
   import { BaseBreadcrumbProps } from "./BaseBreadcrumb.ts";
 
   defineOptions({
-    inheritAttrs: false,
     name: 'ABaseBreadcrumb'
   })
   import { useRouter } from 'vue-router';
