@@ -1,63 +1,57 @@
-import { defineComponent as v, resolveComponent as r, openBlock as s, createBlock as d, withCtx as a, createVNode as o, createElementBlock as c, Fragment as S, renderList as C, renderSlot as f, createCommentVNode as b, mergeProps as k, normalizeStyle as w, createTextVNode as y } from "vue";
-import $ from "./BaseFormItem.vue.js";
-const U = {
+import { defineComponent as C, resolveComponent as r, openBlock as s, createBlock as c, withCtx as t, createVNode as a, createElementBlock as b, Fragment as k, renderList as w, renderSlot as f, createCommentVNode as y, mergeProps as $, normalizeStyle as U, createTextVNode as h } from "vue";
+import x from "./BaseFormItem.vue.js";
+const N = {
   key: 0,
   class: "base-search-operator"
-}, L = /* @__PURE__ */ v({
+}, L = /* @__PURE__ */ C({
   inheritAttrs: !1,
   name: "ABaseSearchBar",
   __name: "BaseSearchBar",
-  props: {
-    config: {},
-    hasBtn: { type: Boolean, default: !0 },
-    btnBoxStyle: {},
-    btnSpan: { default: 2 }
-  },
   emits: ["reset", "submit"],
-  setup(N, { emit: h }) {
-    const u = h, g = (t, n) => {
-      n.trigger === "immediately" && u("submit");
+  setup(V, { emit: g }) {
+    const n = V, p = g, i = (u, o) => {
+      o.trigger === "immediately" && p("submit");
     };
-    return (t, n) => {
-      const i = r("t-form-item"), p = r("t-col"), m = r("t-row"), _ = r("t-button"), V = r("t-form");
-      return s(), d(V, {
+    return (u, o) => {
+      const v = r("t-form-item"), d = r("t-col"), _ = r("t-row"), m = r("t-button"), B = r("t-form");
+      return s(), c(B, {
         "label-width": 80,
         colon: "",
-        onReset: n[0] || (n[0] = (e) => u("reset")),
-        onSubmit: n[1] || (n[1] = (e) => u("submit"))
+        onReset: o[0] || (o[0] = (e) => p("reset")),
+        onSubmit: o[1] || (o[1] = (e) => p("submit"))
       }, {
-        default: a(() => [
-          o(m, { gutter: [24, 24] }, {
-            default: a(() => [
-              o(p, {
-                span: 12 - t.btnSpan
+        default: t(() => [
+          a(_, { gutter: [24, 24] }, {
+            default: t(() => [
+              a(d, {
+                span: 12 - n.btnSpan
               }, {
-                default: a(() => [
-                  o(m, { gutter: [24, 24] }, {
-                    default: a(() => [
-                      (s(!0), c(S, null, C(t.config, (e, B) => (s(), d(p, {
-                        key: B,
+                default: t(() => [
+                  a(_, { gutter: [24, 24] }, {
+                    default: t(() => [
+                      (s(!0), b(k, null, w(n.config, (e, S) => (s(), c(d, {
+                        key: S,
                         span: e.span || 4
                       }, {
-                        default: a(() => [
-                          e.type === "SLOT" ? (s(), d(i, {
+                        default: t(() => [
+                          e.type === "SLOT" ? (s(), c(v, {
                             key: 0,
                             label: e == null ? void 0 : e.label,
                             "label-width": e == null ? void 0 : e.labelWidth,
                             name: e == null ? void 0 : e.name
                           }, {
-                            default: a(() => [
-                              f(t.$slots, e.name, { data: e }, void 0, !0)
+                            default: t(() => [
+                              f(u.$slots, e.name, { data: e }, void 0, !0)
                             ]),
                             _: 2
-                          }, 1032, ["label", "label-width", "name"])) : b("", !0),
-                          o($, k({ ref_for: !0 }, e.attrs, {
+                          }, 1032, ["label", "label-width", "name"])) : y("", !0),
+                          a(x, $({ ref_for: !0 }, e.attrs, {
                             modelValue: e.value,
                             "onUpdate:modelValue": (l) => e.value = l,
                             typeValue: e.typeValue,
                             "onUpdate:typeValue": (l) => e.typeValue = l,
                             config: e,
-                            onChange: (l) => g(l, e)
+                            onChange: (l) => i(l, e)
                           }), null, 16, ["modelValue", "onUpdate:modelValue", "typeValue", "onUpdate:typeValue", "config", "onChange"])
                         ]),
                         _: 2
@@ -68,36 +62,36 @@ const U = {
                 ]),
                 _: 3
               }, 8, ["span"]),
-              o(p, {
-                span: t.btnSpan,
+              a(d, {
+                span: n.btnSpan,
                 class: "text-right",
-                style: w(t.btnBoxStyle)
+                style: U(n.btnBoxStyle)
               }, {
-                default: a(() => [
-                  f(t.$slots, "btnPre", {}, void 0, !0),
-                  t.hasBtn ? (s(), c("div", U, [
-                    o(_, {
+                default: t(() => [
+                  f(u.$slots, "btnPre", {}, void 0, !0),
+                  n.hasBtn ? (s(), b("div", N, [
+                    a(m, {
                       type: "submit",
                       theme: "primary"
                     }, {
-                      default: a(() => [
-                        y("查询")
+                      default: t(() => [
+                        h("查询")
                       ]),
                       _: 1
                     }),
-                    o(_, {
+                    a(m, {
                       class: "ml-15",
                       type: "reset",
                       variant: "base",
                       theme: "default"
                     }, {
-                      default: a(() => [
-                        y("重置")
+                      default: t(() => [
+                        h("重置")
                       ]),
                       _: 1
                     })
-                  ])) : b("", !0),
-                  f(t.$slots, "default", {}, void 0, !0)
+                  ])) : y("", !0),
+                  f(u.$slots, "default", {}, void 0, !0)
                 ]),
                 _: 3
               }, 8, ["span", "style"])

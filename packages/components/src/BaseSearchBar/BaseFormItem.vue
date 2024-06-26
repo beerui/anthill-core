@@ -99,20 +99,11 @@
 </template>
 <script setup lang="ts">
 import { computed } from 'vue';
+import { BaseFormItemProps, BaseFormItemPropsEmits } from "./BaseSearchBar.ts";
 
-type ConfigType = {
-  modelValue?: any;
-  typeValue?: any;
-  config?: any;
-};
+const props = defineProps<BaseFormItemProps>();
 
-const props = defineProps<ConfigType>();
-
-const emits = defineEmits<{
-  (e: 'update:modelValue', value: any): void;
-  (e: 'update:typeValue', value: any): void;
-  (e: 'change', value: any): void;
-}>();
+const emits = defineEmits<BaseFormItemPropsEmits>();
 
 const value = computed({
   get() {

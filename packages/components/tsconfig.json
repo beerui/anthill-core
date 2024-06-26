@@ -4,28 +4,8 @@
       "src"
   ],
   "compilerOptions": {
-    "types": ["vite/client", "vue-router"],
     "moduleResolution": "node",
     "baseUrl": ".",
-    "target": "esnext",
-    "module": "esnext",
-    "jsx": "preserve",
-    "strict": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "lib": ["esnext", "dom"],
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "allowSyntheticDefaultImports": true,
-    "isolatedModules": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "noImplicitAny": true,
-    "importHelpers": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
   },
   "exclude": ["node_modules"]
 }

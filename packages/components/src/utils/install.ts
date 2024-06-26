@@ -1,14 +1,13 @@
-import type { App, Plugin } from 'vue'
-
-export type SFCWithInstall<T> = T & Plugin
+import type { App, Directive,Plugin } from 'vue'
+import type { SFCInstallWithContext, SFCWithInstall } from './typescript'
 
 export const withInstall = <T, E extends Record<string, any>>(
-  main: T,
-  extra?: E
+    main: T,
+    extra?: E
 ) => {
-  (main as SFCWithInstall<T>).install = (app: any): void => {
+  (main as SFCWithInstall<T>).install = (Vue: App): void => {
     for (const comp of [main, ...Object.values(extra ?? {})]) {
-      app.component(comp.name, comp)
+      Vue.component(comp.name, comp)
     }
   }
 
@@ -20,11 +19,39 @@ export const withInstall = <T, E extends Record<string, any>>(
   return main as SFCWithInstall<T> & E
 }
 
-export const makeInstaller = (components: Plugin[] = []) => {
-  const install = (app: App) => {
-    components.forEach((c) => app.use(c))
+export const withInstallFunction = <T>(fn: T, name: string) => {
+  (fn as SFCWithInstall<T>).install = (app: App) => {
+    (fn as SFCInstallWithContext<T>)._context = app._context
+    app.config.globalProperties[name] = fn
   }
+
+  return fn as SFCInstallWithContext<T>
+}
+
+export const withInstallDirective = <T extends Directive>(
+    directive: T,
+    name: string
+) => {
+  (directive as SFCWithInstall<T>).install = (app: App): void => {
+    app.directive(name, directive)
+  }
+
+  return directive as SFCWithInstall<T>
+}
+
+
+export const makeInstaller = (components: Plugin[] = []) => {
+  const install = (Vue: App) => {
+    // if (app[INSTALLED_KEY]) return
+
+    // app[INSTALLED_KEY] = true
+    components.forEach((c) => Vue.use(c))
+
+    // if (options) provideGlobalConfig(options, app, true)
+  }
+
   return {
+    // version,
     install,
   }
 }

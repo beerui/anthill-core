@@ -1,7 +1,7 @@
-import o from "./BaseSearchBar.vue2.js";
+import a from "./BaseSearchBar.vue2.js";
 /* empty css                   */
-import r from "../_virtual/_plugin-vue_export-helper.js";
-const d = /* @__PURE__ */ r(o, [["__scopeId", "data-v-dd59df3e"]]);
+import o from "../_virtual/_plugin-vue_export-helper.js";
+const c = /* @__PURE__ */ o(a, [["__scopeId", "data-v-1a9c1bae"]]);
 export {
-  d as default
+  c as default
 };

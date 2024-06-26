@@ -8,10 +8,10 @@ import {BaseFormItemType} from "../BaseTableHead";
  * 定义props类型
  */
 export interface TBaseSearchBarProps {
-   config: BaseFormItemType[];
-   hasBtn?: boolean;
+   config?: BaseFormItemType[];
+   hasBtn: boolean;
    btnBoxStyle?: any;
-   btnSpan?: number;
+   btnSpan: number;
 }
 export interface BaseFormItemProps {
    modelValue?: any;
@@ -22,8 +22,8 @@ export interface BaseFormItemProps {
  * 定义emit类型
  */
 export type TBaseSearchBarPropsEmits = {
-   'reset': [value: any];
-   'submit': [value: any];
+   'reset': any;
+   'submit': any;
 }
 export type BaseFormItemPropsEmits = {
    'update:modelValue': [value: string]

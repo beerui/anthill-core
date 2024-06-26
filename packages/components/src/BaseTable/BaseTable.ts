@@ -1,5 +1,6 @@
 // @ts-ignore
 import BaseTable from './BaseTable.vue';
+import {PageInfo, TableRowData} from "tdesign-vue-next";
 
 /**
  * 定义props类型
@@ -21,13 +22,13 @@ export interface BaseTableProps {
  * 定义emit类型
  */
 export type BaseTableEmits = {
-    'page-change': [value: any];
-    'change': [value: any];
-    'select-change': [value: any];
-    'row-edit': [value: any];
-    'row-validate': [value: any];
-    'validate': [value: any];
-    'cell-click': [value: any];
+    (e: 'row-validate', params: any): void;
+    (e: 'row-edit', params: any): void;
+    (e: 'validate', params: any): void;
+    (e: 'cell-click', args: any): void;
+    (e: 'change', value: any, item: any): void;
+    (e: 'select-change', value: any, item: any): void;
+    (e: 'page-change', pageInfo: PageInfo, newDataSource: TableRowData[]): void;
 }
 /**
  * 定义instance类型

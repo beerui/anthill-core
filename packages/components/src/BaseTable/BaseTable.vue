@@ -25,26 +25,29 @@
   />
 </template>
 <script lang="ts" setup>
+import {BaseTableEmits, BaseTableProps} from "./BaseTable.ts";
+
   defineOptions({
     inheritAttrs: false,
     name: 'ABaseTable'
   })
   import { computed, ref } from 'vue';
-  import { PageInfo, TableRowData } from 'tdesign-vue-next';
+import {PageInfo, TableRowData} from "tdesign-vue-next";
 
-  const props = defineProps([
-    'footerSummary',
-    'fixedRows',
-    'footData',
-    'columns',
-    'data',
-    'dataLoading',
-    'pagination',
-    'rowKey',
-    'selectedRowKeys',
-    'editableRowKeys',
-    'tableRef',
-  ]);
+  // [
+  //   'footerSummary',
+  //   'fixedRows',
+  //   'footData',
+  //   'columns',
+  //   'data',
+  //   'dataLoading',
+  //   'pagination',
+  //   'rowKey',
+  //   'selectedRowKeys',
+  //   'editableRowKeys',
+  //   'tableRef',
+  // ]
+  const props = defineProps<BaseTableProps>();
 
 
   const footDatas = computed(() => {
@@ -60,23 +63,23 @@
     return null;
   });
 
-
-  const emits = defineEmits([
-    'page-change',
-    'change',
-    'select-change',
-    'row-edit',
-    'row-validate',
-    'validate',
-    'cell-click',
-  ]);
+  // [
+  //   'page-change',
+  //   'change',
+  //   'select-change',
+  //   'row-edit',
+  //   'row-validate',
+  //   'validate',
+  //   'cell-click',
+  // ]
+  const emits = defineEmits<BaseTableEmits>();
   const tableRef = ref();
 
-  const cellClick = (...args: any) => {
-    emits('cell-click', ...args);
+  const cellClick = (args: any) => {
+    emits('cell-click', args);
   };
-  const rehandleSelectChange = (value: number[], { selectedRowData }: any) => {
-    emits('select-change', value, { selectedRowData });
+  const rehandleSelectChange = (value: any, item: any) => {
+    emits('select-change', value, item);
   };
 
   const rehandlePageChange = (pageInfo: PageInfo, newDataSource: TableRowData[]) => {
@@ -102,7 +105,7 @@
 
   // 触发行校验
   const triggerRowValidate = (id: any) => {
-    (tableRef.value as TableRowData).validateRowData(id).then((params: any) => {
+    tableRef.value.validateRowData(id).then((params: any) => {
       console.log('Event Table Promise Validate:', params);
     });
   };

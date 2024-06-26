@@ -1,81 +1,73 @@
-import { defineComponent as k, computed as i, ref as b, resolveComponent as v, openBlock as C, createBlock as x, mergeProps as K } from "vue";
-const D = /* @__PURE__ */ k({
+import { defineComponent as R, computed as l, ref as k, resolveComponent as b, openBlock as v, createBlock as C, mergeProps as K } from "vue";
+const V = /* @__PURE__ */ R({
   inheritAttrs: !1,
   name: "ABaseTable",
   __name: "BaseTable",
-  props: [
-    "footerSummary",
-    "fixedRows",
-    "footData",
-    "columns",
-    "data",
-    "dataLoading",
-    "pagination",
-    "rowKey",
-    "selectedRowKeys",
-    "editableRowKeys",
-    "tableRef"
-  ],
-  emits: [
-    "page-change",
-    "change",
-    "select-change",
-    "row-edit",
-    "row-validate",
-    "validate",
-    "cell-click"
-  ],
-  setup(a, { expose: c, emit: r }) {
-    const n = a, s = i(() => n.footData ? n.footData : null), d = i(() => n.fixedRows != null ? n.fixedRows : null), o = r, l = b(), g = (...e) => {
-      o("cell-click", ...e);
-    }, f = (e, { selectedRowData: t }) => {
-      o("select-change", e, { selectedRowData: t });
-    }, m = (e, t) => {
-      o("page-change", e, t);
-    }, w = (e, t) => {
-      o("change", e, t);
+  props: {
+    footerSummary: {},
+    fixedRows: {},
+    footData: {},
+    columns: {},
+    data: {},
+    dataLoading: {},
+    pagination: {},
+    rowKey: {},
+    selectedRowKeys: {},
+    editableRowKeys: {},
+    tableRef: {}
+  },
+  emits: ["row-validate", "row-edit", "validate", "cell-click", "change", "select-change", "page-change"],
+  setup(r, { expose: s, emit: i }) {
+    const t = r, d = l(() => t.footData ? t.footData : null), c = l(() => t.fixedRows != null ? t.fixedRows : null), o = i, n = k(), g = (e) => {
+      o("cell-click", e);
+    }, f = (e, a) => {
+      o("select-change", e, a);
+    }, m = (e, a) => {
+      o("page-change", e, a);
+    }, w = (e, a) => {
+      o("change", e, a);
     }, u = (e) => {
       o("row-edit", e);
-    }, h = (e) => {
+    }, p = (e) => {
       o("row-validate", e);
-    }, y = (e) => {
+    }, h = (e) => {
       o("validate", e);
     };
-    return c({
+    return s({
       triggerRowValidate: (e) => {
-        l.value.validateRowData(e).then((t) => {
-          console.log("Event Table Promise Validate:", t);
+        n.value.validateRowData(e).then((a) => {
+          console.log("Event Table Promise Validate:", a);
         });
       }
-    }), (e, t) => {
-      const R = v("t-table");
-      return C(), x(R, K({
+    }), (e, a) => {
+      const y = b("t-table");
+      return v(), C(y, K({
         ref_key: "tableRef",
-        ref: l,
-        data: a.data,
-        columns: a.columns,
-        "row-key": a.rowKey,
+        ref: n,
+        data: e.data,
+        columns: e.columns,
+        "row-key": e.rowKey,
         "vertical-align": "middle",
         hover: !0,
-        pagination: a.pagination,
-        loading: a.dataLoading,
-        "selected-row-keys": a.selectedRowKeys,
-        "editable-row-keys": a.editableRowKeys,
+        pagination: e.pagination,
+        loading: e.dataLoading,
+        "selected-row-keys": e.selectedRowKeys,
+        "editable-row-keys": e.editableRowKeys,
         "cell-empty-content": "-",
-        footerSummar: a.footerSummary,
-        "fixed-rows": d.value,
-        "foot-data": s.value,
+        footerSummar: e.footerSummary,
+        "fixed-rows": c.value,
+        "foot-data": d.value,
         onCellClick: g,
         onSelectChange: f,
         onPageChange: m,
         onChange: w,
         onRowEdit: u,
-        onRowValidate: h,
-        onValidate: y
+        onRowValidate: p,
+        onValidate: h
       }, e.$attrs), null, 16, ["data", "columns", "row-key", "pagination", "loading", "selected-row-keys", "editable-row-keys", "footerSummar", "fixed-rows", "foot-data"]);
     };
   }
 });
 export {
-  D as default
+  V as default
 };

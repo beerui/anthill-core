@@ -51,7 +51,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-  import {ConfigType} from "./BaseTableHead";
+  import { ConfigType } from "./BaseTableHead";
 
   defineOptions({
     inheritAttrs: false,

@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@brewer/anthill-core": "workspace:0.1.0",
+    "@brewer/anthill-core": "workspace:0.1.6",
     "vue": "^3.4.29"
   },
   "devDependencies": {
