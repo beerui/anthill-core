@@ -9,9 +9,9 @@ import {BaseFormItemType} from "../BaseTableHead";
  */
 export interface TBaseSearchBarProps {
    config?: BaseFormItemType[];
-   hasBtn: boolean;
+   hiddenBtn?: boolean;
    btnBoxStyle?: any;
-   btnSpan: number;
+   btnSpan?: number;
 }
 export interface BaseFormItemProps {
    modelValue?: any;

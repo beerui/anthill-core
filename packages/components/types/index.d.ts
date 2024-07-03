@@ -18,25 +18,56 @@ import { TdLinkProps } from 'tdesign-vue-next';
 import { TdPopconfirmProps } from 'tdesign-vue-next';
 import { VNodeProps } from 'vue';
 
-declare const __VLS_component: DefineComponent<{}, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly< ExtractPropTypes<{}>>, {}, {}>;
+declare const __VLS_component: DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<BaseBreadcrumbProps>, {
+    isBack: boolean;
+    maxItemWidth: string;
+    mb: number;
+}>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly< ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<BaseBreadcrumbProps>, {
+    isBack: boolean;
+    maxItemWidth: string;
+    mb: number;
+}>>>, {
+    isBack: boolean;
+    maxItemWidth: string;
+    mb: number;
+}, {}>;
 
-declare const __VLS_component_2: DefineComponent<__VLS_TypePropsToRuntimeProps<ConfigType>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
+declare const __VLS_component_2: DefineComponent<__VLS_TypePropsToRuntimeProps_2<ConfigType>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
     [x: string]: (event: any) => void;
-}, string, PublicProps, Readonly< ExtractPropTypes<__VLS_TypePropsToRuntimeProps<ConfigType>>>, {}, {}>;
+}, string, PublicProps, Readonly< ExtractPropTypes<__VLS_TypePropsToRuntimeProps_2<ConfigType>>>, {}, {}>;
 
-declare const __VLS_component_3: DefineComponent<{}, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
+declare const __VLS_component_3: DefineComponent<Readonly<{
+    config?: any;
+    hiddenBtn?: any;
+    btnSpan?: any;
+    btnBoxStyle?: any;
+}>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
     submit: (...args: any[]) => void;
     reset: (...args: any[]) => void;
-}, string, PublicProps, Readonly< ExtractPropTypes<{}>> & {
+}, string, PublicProps, Readonly< ExtractPropTypes<Readonly<{
+    config?: any;
+    hiddenBtn?: any;
+    btnSpan?: any;
+    btnBoxStyle?: any;
+}>>> & {
     onReset?: (...args: any[]) => any;
     onSubmit?: (...args: any[]) => any;
-}, {}, {}>;
+}, {
+    readonly config?: any;
+    readonly hiddenBtn?: any;
+    readonly btnSpan?: any;
+    readonly btnBoxStyle?: any;
+}, {}>;
 
 declare type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
 
 declare type __VLS_NonUndefinedable_2<T> = T extends undefined ? never : T;
 
 declare type __VLS_NonUndefinedable_3<T> = T extends undefined ? never : T;
+
+declare type __VLS_Prettify<T> = {
+    [K in keyof T]: T[K];
+} & {};
 
 declare function __VLS_template(): {
     right?(_: {}): any;
@@ -47,8 +78,8 @@ declare function __VLS_template_2(): {
     btns?(_: {}): any;
 };
 
-declare function __VLS_template_3(): Partial<Record<string, (_: {
-    data: BaseFormItemType;
+declare function __VLS_template_3(): Partial<Record<any, (_: {
+    data: any;
 }) => any>> & {
     btnPre?(_: {}): any;
     default?(_: {}): any;
@@ -81,6 +112,12 @@ declare type __VLS_TypePropsToRuntimeProps_3<T> = {
     };
 };
 
+declare type __VLS_WithDefaults<P, D> = {
+    [K in keyof Pick<P, keyof P>]: K extends keyof D ? __VLS_Prettify<P[K] & {
+        default: D[K];
+    }> : P[K];
+};
+
 declare type __VLS_WithTemplateSlots<T, S> = T & {
     new (): {
         $slots: S;
@@ -100,56 +137,167 @@ declare type __VLS_WithTemplateSlots_3<T, S> = T & {
 };
 
 export declare const ABaseBreadcrumb: SFCWithInstall<{
-    new (...args: any[]): CreateComponentPublicInstance<Readonly< ExtractPropTypes<{}>>, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, VNodeProps & AllowedComponentProps & ComponentCustomProps & Readonly< ExtractPropTypes<{}>>, {}, true, {}, {}, {
+    new (...args: any[]): CreateComponentPublicInstance<Readonly< ExtractPropTypes<{
+        isBack: {
+            type: PropType<boolean>;
+            default: boolean;
+        };
+        maxItemWidth: {
+            type: PropType<string>;
+            default: string;
+        };
+        mb: {
+            type: PropType<number>;
+            default: number;
+        };
+        list: {
+            type: PropType<any[]>;
+        };
+    }>>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, VNodeProps & AllowedComponentProps & ComponentCustomProps & Readonly< ExtractPropTypes<{
+        isBack: {
+            type: PropType<boolean>;
+            default: boolean;
+        };
+        maxItemWidth: {
+            type: PropType<string>;
+            default: string;
+        };
+        mb: {
+            type: PropType<number>;
+            default: number;
+        };
+        list: {
+            type: PropType<any[]>;
+        };
+    }>>, {
+        isBack: boolean;
+        maxItemWidth: string;
+        mb: number;
+    }, true, {}, {}, {
         P: {};
         B: {};
         D: {};
         C: {};
         M: {};
         Defaults: {};
-    }, Readonly< ExtractPropTypes<{}>>, {}, {}, {}, {}, {}>;
+    }, Readonly< ExtractPropTypes<{
+        isBack: {
+            type: PropType<boolean>;
+            default: boolean;
+        };
+        maxItemWidth: {
+            type: PropType<string>;
+            default: string;
+        };
+        mb: {
+            type: PropType<number>;
+            default: number;
+        };
+        list: {
+            type: PropType<any[]>;
+        };
+    }>>, {}, {}, {}, {}, {
+        isBack: boolean;
+        maxItemWidth: string;
+        mb: number;
+    }>;
     __isFragment?: never;
     __isTeleport?: never;
     __isSuspense?: never;
-} & ComponentOptionsBase<Readonly< ExtractPropTypes<{}>>, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, {}, {}, string, {}> & VNodeProps & AllowedComponentProps & ComponentCustomProps & (new () => {
+} & ComponentOptionsBase<Readonly< ExtractPropTypes<{
+    isBack: {
+        type: PropType<boolean>;
+        default: boolean;
+    };
+    maxItemWidth: {
+        type: PropType<string>;
+        default: string;
+    };
+    mb: {
+        type: PropType<number>;
+        default: number;
+    };
+    list: {
+        type: PropType<any[]>;
+    };
+}>>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, {
+    isBack: boolean;
+    maxItemWidth: string;
+    mb: number;
+}, {}, string, {}> & VNodeProps & AllowedComponentProps & ComponentCustomProps & (new () => {
     $slots: {
         right?(_: {}): any;
     };
 })> & Record<string, any>;
 
 export declare const ABaseSearchBar: SFCWithInstall<{
-    new (...args: any[]): CreateComponentPublicInstance<Readonly< ExtractPropTypes<{}>> & {
+    new (...args: any[]): CreateComponentPublicInstance<Readonly< ExtractPropTypes<Readonly<{
+        config?: any;
+        hiddenBtn?: any;
+        btnSpan?: any;
+        btnBoxStyle?: any;
+    }>>> & {
         onReset?: (...args: any[]) => any;
         onSubmit?: (...args: any[]) => any;
-    }, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
+    }, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
         submit: (...args: any[]) => void;
         reset: (...args: any[]) => void;
-    }, VNodeProps & AllowedComponentProps & ComponentCustomProps & Readonly< ExtractPropTypes<{}>> & {
+    }, VNodeProps & AllowedComponentProps & ComponentCustomProps & Readonly< ExtractPropTypes<Readonly<{
+        config?: any;
+        hiddenBtn?: any;
+        btnSpan?: any;
+        btnBoxStyle?: any;
+    }>>> & {
         onReset?: (...args: any[]) => any;
         onSubmit?: (...args: any[]) => any;
-    }, {}, true, {}, {}, {
+    }, {
+        readonly config?: any;
+        readonly hiddenBtn?: any;
+        readonly btnSpan?: any;
+        readonly btnBoxStyle?: any;
+    }, true, {}, {}, {
         P: {};
         B: {};
         D: {};
         C: {};
         M: {};
         Defaults: {};
-    }, Readonly< ExtractPropTypes<{}>> & {
+    }, Readonly< ExtractPropTypes<Readonly<{
+        config?: any;
+        hiddenBtn?: any;
+        btnSpan?: any;
+        btnBoxStyle?: any;
+    }>>> & {
         onReset?: (...args: any[]) => any;
         onSubmit?: (...args: any[]) => any;
-    }, {}, {}, {}, {}, {}>;
+    }, {}, {}, {}, {}, {
+        readonly config?: any;
+        readonly hiddenBtn?: any;
+        readonly btnSpan?: any;
+        readonly btnBoxStyle?: any;
+    }>;
     __isFragment?: never;
     __isTeleport?: never;
     __isSuspense?: never;
-} & ComponentOptionsBase<Readonly< ExtractPropTypes<{}>> & {
+} & ComponentOptionsBase<Readonly< ExtractPropTypes<Readonly<{
+    config?: any;
+    hiddenBtn?: any;
+    btnSpan?: any;
+    btnBoxStyle?: any;
+}>>> & {
     onReset?: (...args: any[]) => any;
     onSubmit?: (...args: any[]) => any;
-}, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
+}, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
     submit: (...args: any[]) => void;
     reset: (...args: any[]) => void;
-}, string, {}, {}, string, {}> & VNodeProps & AllowedComponentProps & ComponentCustomProps & (new () => {
-    $slots: Partial<Record<string, (_: {
-        data: BaseFormItemType;
+}, string, {
+    readonly config?: any;
+    readonly hiddenBtn?: any;
+    readonly btnSpan?: any;
+    readonly btnBoxStyle?: any;
+}, {}, string, {}> & VNodeProps & AllowedComponentProps & ComponentCustomProps & (new () => {
+    $slots: Partial<Record<any, (_: {
+        data: any;
     }) => any>> & {
         btnPre?(_: {}): any;
         default?(_: {}): any;
@@ -442,7 +590,7 @@ declare const _default_2: __VLS_WithTemplateSlots<typeof __VLS_component, Return
 
 declare const _default_3: __VLS_WithTemplateSlots_2<typeof __VLS_component_2, ReturnType<typeof __VLS_template_2>>;
 
-declare const _default_4: DefineComponent<__VLS_TypePropsToRuntimeProps_2<BaseTableProps>, {
+declare const _default_4: DefineComponent<__VLS_TypePropsToRuntimeProps_3<BaseTableProps>, {
     triggerRowValidate: (id: any) => void;
 }, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
     "row-validate": (params: any) => void;
@@ -452,7 +600,7 @@ declare const _default_4: DefineComponent<__VLS_TypePropsToRuntimeProps_2<BaseTa
     change: (value: any, item: any) => void;
     "select-change": (value: any, item: any) => void;
     "page-change": (pageInfo: PageInfo, newDataSource: TableRowData[]) => void;
-}, string, PublicProps, Readonly< ExtractPropTypes<__VLS_TypePropsToRuntimeProps_2<BaseTableProps>>> & {
+}, string, PublicProps, Readonly< ExtractPropTypes<__VLS_TypePropsToRuntimeProps_3<BaseTableProps>>> & {
     onChange?: (value: any, item: any) => any;
     "onRow-validate"?: (params: any) => any;
     "onRow-edit"?: (params: any) => any;
@@ -464,15 +612,21 @@ declare const _default_4: DefineComponent<__VLS_TypePropsToRuntimeProps_2<BaseTa
 
 declare const _default_5: __VLS_WithTemplateSlots_3<typeof __VLS_component_3, ReturnType<typeof __VLS_template_3>>;
 
-declare const _default_6: DefineComponent<__VLS_TypePropsToRuntimeProps_3<BaseFormItemProps>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
+declare const _default_6: DefineComponent<Readonly<{
+    config?: any;
+}>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
     "update:modelValue": (value: string) => void;
     "update:typeValue": (value: string) => void;
     change: (value: any) => void;
-}, string, PublicProps, Readonly< ExtractPropTypes<__VLS_TypePropsToRuntimeProps_3<BaseFormItemProps>>> & {
+}, string, PublicProps, Readonly< ExtractPropTypes<Readonly<{
+    config?: any;
+}>>> & {
     onChange?: (value: any) => any;
     "onUpdate:modelValue"?: (value: string) => any;
     "onUpdate:typeValue"?: (value: string) => any;
-}, {}, {}>;
+}, {
+    readonly config?: any;
+}, {}>;
 
 export declare type OperatorConfigItem = {
     name: string;
@@ -495,9 +649,9 @@ export declare type TBaseSearchBarInstance = InstanceType<typeof _default_5>;
  */
 export declare interface TBaseSearchBarProps {
     config?: BaseFormItemType[];
-    hasBtn: boolean;
+    hiddenBtn?: boolean;
     btnBoxStyle?: any;
-    btnSpan: number;
+    btnSpan?: number;
 }
 
 /**

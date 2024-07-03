@@ -1,56 +1,57 @@
-import { defineComponent as C, resolveComponent as r, openBlock as s, createBlock as c, withCtx as t, createVNode as a, createElementBlock as b, Fragment as k, renderList as w, renderSlot as _, createCommentVNode as y, mergeProps as $, normalizeStyle as U, createTextVNode as V } from "vue";
+import { defineComponent as v, resolveComponent as r, openBlock as s, createBlock as c, withCtx as t, createVNode as n, createElementBlock as _, Fragment as C, renderList as k, renderSlot as f, createCommentVNode as y, mergeProps as w, normalizeStyle as $, createTextVNode as g } from "vue";
 import x from "./BaseFormItem.vue.js";
-const N = {
+const U = {
   key: 0,
   class: "base-search-operator"
-}, T = /* @__PURE__ */ C({
+}, P = /* @__PURE__ */ v({
   name: "ABaseSearchBar",
   __name: "BaseSearchBar",
+  props: ["hiddenBtn", "btnSpan", "btnBoxStyle", "config"],
   emits: ["reset", "submit"],
-  setup(g, { emit: h }) {
-    const o = g, p = h, i = (u, n) => {
-      n.trigger === "immediately" && p("submit");
+  setup(o, { emit: h }) {
+    const d = h, V = (u, a) => {
+      a.trigger === "immediately" && d("submit");
     };
-    return (u, n) => {
-      const B = r("t-form-item"), d = r("t-col"), f = r("t-row"), m = r("t-button"), S = r("t-form");
-      return s(), c(S, {
+    return (u, a) => {
+      const i = r("t-form-item"), p = r("t-col"), m = r("t-row"), b = r("t-button"), B = r("t-form");
+      return s(), c(B, {
         "label-width": 80,
         colon: "",
-        onReset: n[0] || (n[0] = (e) => p("reset")),
-        onSubmit: n[1] || (n[1] = (e) => p("submit"))
+        onReset: a[0] || (a[0] = (e) => d("reset")),
+        onSubmit: a[1] || (a[1] = (e) => d("submit"))
       }, {
         default: t(() => [
-          a(f, { gutter: [24, 24] }, {
+          n(m, { gutter: [24, 24] }, {
             default: t(() => [
-              a(d, {
-                span: 12 - o.btnSpan
+              n(p, {
+                span: 12 - (o.btnSpan || 2)
               }, {
                 default: t(() => [
-                  a(f, { gutter: [24, 24] }, {
+                  n(m, { gutter: [24, 24] }, {
                     default: t(() => [
-                      (s(!0), b(k, null, w(o.config, (e, v) => (s(), c(d, {
-                        key: v,
+                      (s(!0), _(C, null, k(o.config || [], (e, S) => (s(), c(p, {
+                        key: S,
                         span: e.span || 4
                       }, {
                         default: t(() => [
-                          e.type === "SLOT" ? (s(), c(B, {
+                          e.type === "SLOT" ? (s(), c(i, {
                             key: 0,
                             label: e == null ? void 0 : e.label,
                             "label-width": e == null ? void 0 : e.labelWidth,
                             name: e == null ? void 0 : e.name
                           }, {
                             default: t(() => [
-                              _(u.$slots, e.name, { data: e })
+                              f(u.$slots, e.name, { data: e })
                             ]),
                             _: 2
                           }, 1032, ["label", "label-width", "name"])) : y("", !0),
-                          a(x, $({ ref_for: !0 }, e.attrs, {
+                          n(x, w({ ref_for: !0 }, e.attrs, {
                             modelValue: e.value,
                             "onUpdate:modelValue": (l) => e.value = l,
                             typeValue: e.typeValue,
                             "onUpdate:typeValue": (l) => e.typeValue = l,
                             config: e,
-                            onChange: (l) => i(l, e)
+                            onChange: (l) => V(l, e)
                           }), null, 16, ["modelValue", "onUpdate:modelValue", "typeValue", "onUpdate:typeValue", "config", "onChange"])
                         ]),
                         _: 2
@@ -61,36 +62,36 @@ const N = {
                 ]),
                 _: 3
               }, 8, ["span"]),
-              a(d, {
-                span: o.btnSpan,
+              n(p, {
+                span: o.btnSpan || 2,
                 class: "text-right",
-                style: U(o.btnBoxStyle)
+                style: $(o.btnBoxStyle || null)
               }, {
                 default: t(() => [
-                  _(u.$slots, "btnPre"),
-                  o.hasBtn ? (s(), b("div", N, [
-                    a(m, {
+                  f(u.$slots, "btnPre"),
+                  o.hiddenBtn ? y("", !0) : (s(), _("div", U, [
+                    n(b, {
                       type: "submit",
                       theme: "primary"
                     }, {
                       default: t(() => [
-                        V("查询")
+                        g("查询")
                       ]),
                       _: 1
                     }),
-                    a(m, {
+                    n(b, {
                       class: "ml-15",
                       type: "reset",
                       variant: "base",
                       theme: "default"
                     }, {
                       default: t(() => [
-                        V("重置")
+                        g("重置")
                       ]),
                       _: 1
                     })
-                  ])) : y("", !0),
-                  _(u.$slots, "default")
+                  ])),
+                  f(u.$slots, "default")
                 ]),
                 _: 3
               }, 8, ["span", "style"])
@@ -104,5 +105,5 @@ const N = {
   }
 });
 export {
-  T as default
+  P as default
 };

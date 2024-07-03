@@ -1,52 +1,56 @@
-import { defineComponent as B, resolveComponent as t, openBlock as r, createBlock as n, normalizeStyle as h, withCtx as e, createVNode as c, createElementBlock as y, Fragment as x, renderList as w, createTextVNode as m, toDisplayString as g, renderSlot as C, createCommentVNode as I } from "vue";
-import { useRouter as N } from "vue-router";
-const v = /* @__PURE__ */ B({
+import { defineComponent as f, resolveComponent as t, openBlock as r, createBlock as n, normalizeStyle as B, withCtx as o, createVNode as m, createElementBlock as k, Fragment as h, renderList as y, createTextVNode as c, toDisplayString as w, renderSlot as g, createCommentVNode as C } from "vue";
+import { useRouter as I } from "vue-router";
+const $ = /* @__PURE__ */ f({
   name: "ABaseBreadcrumb",
   __name: "BaseBreadcrumb",
-  setup(s) {
-    const i = N(), u = () => {
-      i.back();
-    }, o = s;
-    return (l, S) => {
-      const _ = t("t-breadcrumbItem"), d = t("t-breadcrumb"), p = t("t-icon"), b = t("t-button"), f = t("t-row");
-      return r(), n(f, {
+  props: {
+    list: {},
+    isBack: { type: Boolean, default: !1 },
+    maxItemWidth: { default: "150" },
+    mb: { default: 20 }
+  },
+  setup(x) {
+    const s = I(), l = () => {
+      s.back();
+    };
+    return (e, N) => {
+      const i = t("t-breadcrumbItem"), u = t("t-breadcrumb"), d = t("t-icon"), p = t("t-button"), _ = t("t-row");
+      return r(), n(_, {
         align: "center",
         justify: "space-between",
-        style: h({ marginBottom: `${o.mb}px` })
+        style: B({ marginBottom: `${e.mb}px` })
       }, {
-        default: e(() => [
-          c(d, {
-            "max-item-width": o.maxItemWidth
-          }, {
-            default: e(() => [
-              (r(!0), y(x, null, w(o.list, (a, k) => (r(), n(_, {
-                key: `breadcrumbItem-${k}`,
+        default: o(() => [
+          m(u, { "max-item-width": e.maxItemWidth }, {
+            default: o(() => [
+              (r(!0), k(h, null, y(e.list, (a, b) => (r(), n(i, {
+                key: `breadcrumbItem-${b}`,
                 to: a.path
               }, {
-                default: e(() => [
-                  m(g(a.title), 1)
+                default: o(() => [
+                  c(w(a.title), 1)
                 ]),
                 _: 2
               }, 1032, ["to"]))), 128))
             ]),
             _: 1
           }, 8, ["max-item-width"]),
-          C(l.$slots, "right"),
-          o.isBack ? (r(), n(b, {
+          g(e.$slots, "right"),
+          e.isBack ? (r(), n(p, {
             key: 0,
             theme: "primary",
             shape: "round",
             variant: "base",
-            onClick: u
+            onClick: l
           }, {
-            icon: e(() => [
-              c(p, { name: "rollback" })
+            icon: o(() => [
+              m(d, { name: "rollback" })
             ]),
-            default: e(() => [
-              m(" 返回 ")
+            default: o(() => [
+              c(" 返回 ")
             ]),
             _: 1
-          })) : I("", !0)
+          })) : C("", !0)
         ]),
         _: 3
       }, 8, ["style"]);
@@ -54,5 +58,5 @@ const v = /* @__PURE__ */ B({
   }
 });
 export {
-  v as default
+  $ as default
 };

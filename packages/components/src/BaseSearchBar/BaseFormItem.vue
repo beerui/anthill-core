@@ -101,7 +101,7 @@
 import { computed } from 'vue';
 import { BaseFormItemProps, BaseFormItemPropsEmits } from "./BaseSearchBar";
 
-const props = defineProps<BaseFormItemProps>();
+const props = defineProps(['config']);
 
 const emits = defineEmits<BaseFormItemPropsEmits>();
 
