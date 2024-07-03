@@ -3,7 +3,7 @@
  * @notice 为了保持样式一致性：slot中的按钮 必须增加class base-table-content__btn
  -->
 <template>
-  <div class="fcb my-table-head-wrapper">
+  <div class="fcb base-table-head-wrapper">
     <div class="flex items-center">
       <div class="title" :style="props.config?.style">{{ props.config?.title }}</div>
       <slot></slot>
@@ -69,34 +69,3 @@
 
   const props = defineProps<ConfigType>();
 </script>
-<style lang="scss">
-.base-table-content {
-  .t-button + .t-button {
-    margin-left: 0;
-  }
-  &__btn {
-    margin-right: 16px;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-}
-.my-table-head-wrapper {
-  .title {
-    font-size: 16px;
-    line-height: 32px;
-    font-weight: 500;
-    font: var(--td-font-title-medium);
-    color: var(--td-text-color-primary);
-    margin-right: var(--td-comp-margin-l);
-  }
-  :deep(.t-form-inline) {
-    .t-form__item {
-      margin-right: 0;
-      + .t-form__item {
-        margin-left: var(--td-comp-margin-xxl);
-      }
-    }
-  }
-}
-</style>

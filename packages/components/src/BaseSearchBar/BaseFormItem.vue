@@ -99,7 +99,7 @@
 </template>
 <script setup lang="ts">
 import { computed } from 'vue';
-import { BaseFormItemProps, BaseFormItemPropsEmits } from "./BaseSearchBar.ts";
+import { BaseFormItemProps, BaseFormItemPropsEmits } from "./BaseSearchBar";
 
 const props = defineProps<BaseFormItemProps>();
 
@@ -139,11 +139,3 @@ export default {
   inheritAttrs: false,
 };
 </script>
-<style lang="scss" scoped>
-:deep(.t-input-adornment, .t-date-picker) {
-  width: 100%;
-}
-.base-date-picker {
-  width: 100%;
-}
-</style>

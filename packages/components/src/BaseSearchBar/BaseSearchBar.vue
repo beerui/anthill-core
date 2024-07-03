@@ -34,7 +34,7 @@ defineOptions({
   name: 'ABaseSearchBar'
 })
 import BaseFormItem from './BaseFormItem.vue';
-import { TBaseSearchBarProps, TBaseSearchBarPropsEmits } from "./BaseSearchBar.ts";
+import { TBaseSearchBarProps, TBaseSearchBarPropsEmits } from "./BaseSearchBar";
 // @ts-ignore
 const props = withDefaults(
   defineProps(),
@@ -53,11 +53,3 @@ const onChangeValue = (value: any, item: BaseFormItemType) => {
   }
 };
 </script>
-
-<style scoped lang="scss">
-.base-search-operator {
-  .t-button + .t-button {
-    margin-left: var(--td-comp-margin-l);
-  }
-}
-</style>

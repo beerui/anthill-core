@@ -1,0 +1,11 @@
+.base-search-operator .t-button + .t-button {
+  margin-left: var(--td-comp-margin-l);
+}
+
+:deep(.t-input-adornment, .t-date-picker) {
+  width: 100%;
+}
+
+.base-date-picker {
+  width: 100%;
+}

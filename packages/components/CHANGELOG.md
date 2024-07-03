@@ -1,5 +1,11 @@
 # @brewer/anthill-core
 
+## 0.1.12
+
+### Patch Changes
+
+- fixed: css 样式打包
+
 ## 0.1.11
 
 ### Patch Changes

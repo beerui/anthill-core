@@ -1,6 +1,5 @@
 import { defineComponent as R, computed as l, ref as k, resolveComponent as b, openBlock as v, createBlock as C, mergeProps as K } from "vue";
 const V = /* @__PURE__ */ R({
-  inheritAttrs: !1,
   name: "ABaseTable",
   __name: "BaseTable",
   props: {

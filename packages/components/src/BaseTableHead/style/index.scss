@@ -1,0 +1,29 @@
+.base-table-content {
+  .t-button + .t-button {
+    margin-left: 0;
+  }
+  &__btn {
+    margin-right: 16px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.base-table-head-wrapper {
+  .title {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 500;
+    font: var(--td-font-title-medium);
+    color: var(--td-text-color-primary);
+    margin-right: var(--td-comp-margin-l);
+  }
+  :deep(.t-form-inline) {
+    .t-form__item {
+      margin-right: 0;
+      + .t-form__item {
+        margin-left: var(--td-comp-margin-xxl);
+      }
+    }
+  }
+}

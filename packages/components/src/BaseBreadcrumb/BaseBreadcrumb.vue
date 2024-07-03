@@ -15,7 +15,7 @@
     </t-row>
 </template>
 <script lang="ts" setup>
-  import { BaseBreadcrumbProps } from "./BaseBreadcrumb.ts";
+  import { BaseBreadcrumbProps } from "./BaseBreadcrumb";
 
   defineOptions({
     name: 'ABaseBreadcrumb'

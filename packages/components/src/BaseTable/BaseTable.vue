@@ -25,7 +25,7 @@
   />
 </template>
 <script lang="ts" setup>
-import {BaseTableEmits, BaseTableProps} from "./BaseTable.ts";
+import {BaseTableEmits, BaseTableProps} from "./BaseTable";
 
   defineOptions({
     name: 'ABaseTable'

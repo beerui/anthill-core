@@ -1,27 +1,26 @@
-import { defineComponent as k, resolveComponent as t, openBlock as r, createBlock as n, normalizeStyle as B, withCtx as e, createVNode as c, createElementBlock as y, Fragment as x, renderList as w, createTextVNode as m, toDisplayString as g, renderSlot as C, createCommentVNode as I } from "vue";
+import { defineComponent as B, resolveComponent as t, openBlock as r, createBlock as n, normalizeStyle as h, withCtx as e, createVNode as c, createElementBlock as y, Fragment as x, renderList as w, createTextVNode as m, toDisplayString as g, renderSlot as C, createCommentVNode as I } from "vue";
 import { useRouter as N } from "vue-router";
-const v = /* @__PURE__ */ k({
-  inheritAttrs: !1,
+const v = /* @__PURE__ */ B({
   name: "ABaseBreadcrumb",
   __name: "BaseBreadcrumb",
   setup(s) {
-    const i = N(), l = () => {
+    const i = N(), u = () => {
       i.back();
     }, o = s;
-    return (u, S) => {
+    return (l, S) => {
       const _ = t("t-breadcrumbItem"), d = t("t-breadcrumb"), p = t("t-icon"), b = t("t-button"), f = t("t-row");
       return r(), n(f, {
         align: "center",
         justify: "space-between",
-        style: B({ marginBottom: `${o.mb}px` })
+        style: h({ marginBottom: `${o.mb}px` })
       }, {
         default: e(() => [
           c(d, {
             "max-item-width": o.maxItemWidth
           }, {
             default: e(() => [
-              (r(!0), y(x, null, w(o.list, (a, h) => (r(), n(_, {
-                key: `breadcrumbItem-${h}`,
+              (r(!0), y(x, null, w(o.list, (a, k) => (r(), n(_, {
+                key: `breadcrumbItem-${k}`,
                 to: a.path
               }, {
                 default: e(() => [
@@ -32,13 +31,13 @@ const v = /* @__PURE__ */ k({
             ]),
             _: 1
           }, 8, ["max-item-width"]),
-          C(u.$slots, "right"),
+          C(l.$slots, "right"),
           o.isBack ? (r(), n(b, {
             key: 0,
             theme: "primary",
             shape: "round",
             variant: "base",
-            onClick: l
+            onClick: u
           }, {
             icon: e(() => [
               c(p, { name: "rollback" })

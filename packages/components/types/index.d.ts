@@ -287,9 +287,18 @@ export declare const ABaseTableHead: SFCWithInstall<{
     };
 })> & Record<string, any>;
 
+/**
+ * 定义instance类型
+ */
 export declare type BaseBreadcrumbInstance = InstanceType<typeof _default_2>;
 
+/**
+ * 定义props类型
+ */
 export declare interface BaseBreadcrumbProps {
+    /**
+     * 面包屑的路由数据
+     */
     list?: any[];
     isBack?: boolean;
     maxItemWidth?: string;
@@ -326,6 +335,9 @@ export declare type BaseFormItemType = {
     span?: number;
 } & TdFormItemProps;
 
+/**
+ * 定义emit类型
+ */
 export declare type BaseTableEmits = {
     (e: 'row-validate', params: any): void;
     (e: 'row-edit', params: any): void;
@@ -336,18 +348,36 @@ export declare type BaseTableEmits = {
     (e: 'page-change', pageInfo: PageInfo, newDataSource: TableRowData[]): void;
 };
 
+/**
+ * 定义emit类型
+ */
 export declare type BaseTableHeadEmits = {
     'openPage': [value: any];
 };
 
+/**
+ * 定义instance类型
+ */
 export declare type BaseTableHeadInstance = InstanceType<typeof _default_3>;
 
+/**
+ * 定义props类型
+ */
 export declare interface BaseTableHeadProps {
+    /**
+     * 面包屑的路由数据
+     */
     config: ConfigType;
 }
 
+/**
+ * 定义instance类型
+ */
 export declare type BaseTableInstance = InstanceType<typeof _default_4>;
 
+/**
+ * 定义props类型
+ */
 export declare interface BaseTableProps {
     'footerSummary'?: any;
     'fixedRows'?: any;
@@ -455,8 +485,14 @@ export declare type OperatorConfigItem = {
 
 declare type SFCWithInstall<T> = T & Plugin_2;
 
+/**
+ * 定义instance类型
+ */
 export declare type TBaseSearchBarInstance = InstanceType<typeof _default_5>;
 
+/**
+ * 定义props类型
+ */
 export declare interface TBaseSearchBarProps {
     config?: BaseFormItemType[];
     hasBtn: boolean;
@@ -464,6 +500,9 @@ export declare interface TBaseSearchBarProps {
     btnSpan: number;
 }
 
+/**
+ * 定义emit类型
+ */
 export declare type TBaseSearchBarPropsEmits = {
     'reset': any;
     'submit': any;
