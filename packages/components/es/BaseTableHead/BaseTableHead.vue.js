@@ -1,135 +1,156 @@
-import { defineComponent as T, resolveComponent as b, openBlock as e, createElementBlock as c, createElementVNode as y, normalizeStyle as E, toDisplayString as a, renderSlot as h, Fragment as B, renderList as N, createBlock as o, withCtx as n, createVNode as i, mergeProps as s, createTextVNode as d, createCommentVNode as A, withModifiers as k } from "vue";
-const H = { class: "fcb base-table-head-wrapper" }, m = { class: "flex items-center" }, z = { class: "base-table-content" }, D = { key: 1 }, F = { key: 2 }, M = /* @__PURE__ */ T({
+import { defineComponent as H, resolveComponent as d, resolveDirective as K, openBlock as e, createElementBlock as p, createElementVNode as y, normalizeStyle as z, toDisplayString as a, renderSlot as B, Fragment as A, renderList as N, withDirectives as D, createBlock as o, withCtx as n, createVNode as b, mergeProps as r, createTextVNode as l, createCommentVNode as P, withModifiers as k } from "vue";
+const F = { class: "fcb base-table-head-wrapper" }, L = { class: "flex items-center" }, M = { class: "base-table-content" }, j = { key: 1 }, q = { key: 2 }, I = /* @__PURE__ */ H({
   name: "ABaseTableHead",
   __name: "BaseTableHead",
   props: {
     config: {}
   },
-  setup(P, { emit: S }) {
-    const C = (p) => {
-      _("openPage", p);
-    }, _ = S, u = P;
-    return (p, f) => {
+  setup(S, { emit: T }) {
+    const v = (u) => {
+      _("openPage", u);
+    }, _ = T, f = S;
+    return (u, i) => {
       var V, $;
-      const x = b("t-icon"), l = b("t-button"), v = b("t-dropdown"), w = b("t-badge");
-      return e(), c("div", H, [
-        y("div", m, [
+      const C = d("t-icon"), c = d("t-button"), x = d("t-dropdown"), h = d("t-badge"), E = d("t-popconfirm"), w = K("has");
+      return e(), p("div", F, [
+        y("div", L, [
           y("div", {
             class: "title",
-            style: E((V = u.config) == null ? void 0 : V.style)
-          }, a(($ = u.config) == null ? void 0 : $.title), 5),
-          h(p.$slots, "default")
+            style: z((V = f.config) == null ? void 0 : V.style)
+          }, a(($ = f.config) == null ? void 0 : $.title), 5),
+          B(u.$slots, "default")
         ]),
-        y("div", z, [
-          (e(!0), c(B, null, N(u.config.btn, (t, g) => (e(), c("span", {
+        y("div", M, [
+          (e(!0), p(A, null, N(f.config.btn, (t, g) => D((e(), p("span", {
             key: g,
             class: "base-table-content__btn"
           }, [
-            t.cate === "dropdown" ? (e(), o(v, {
+            t.cate === "dropdown" ? (e(), o(x, {
               key: 0,
               class: "base-table-content__btn",
               options: t.options,
-              onClick: f[0] || (f[0] = (r) => _("click", r))
+              onClick: i[0] || (i[0] = (s) => _("click", s))
             }, {
               default: n(() => [
-                i(l, s({ ref_for: !0 }, t.attrs), {
+                b(c, r({ ref_for: !0 }, t.attrs), {
                   default: n(() => [
-                    d(a(t.text) + " ", 1),
-                    t.icon ? (e(), o(x, {
+                    l(a(t.text) + " ", 1),
+                    t.icon ? (e(), o(C, {
                       key: 0,
                       style: { "margin-top": "2px", "margin-left": "2px" },
                       name: t.icon
-                    }, null, 8, ["name"])) : A("", !0)
+                    }, null, 8, ["name"])) : P("", !0)
                   ]),
                   _: 2
                 }, 1040)
               ]),
               _: 2
-            }, 1032, ["options"])) : t.url ? (e(), c("span", D, [
-              t.badge ? (e(), o(w, s({
+            }, 1032, ["options"])) : t.url ? (e(), p("span", j, [
+              t.badge ? (e(), o(h, r({
                 key: 0,
                 count: t.badgeValue,
                 ref_for: !0
               }, t.badgeAttrs), {
                 default: n(() => [
-                  i(l, s({ ref_for: !0 }, t.attrs, {
-                    onClick: k((r) => C(t.url), ["stop"])
+                  b(c, r({ ref_for: !0 }, t.attrs, {
+                    onClick: k((s) => v(t.url), ["stop"])
                   }), {
                     default: n(() => [
-                      d(a(t.text), 1)
+                      l(a(t.text), 1)
                     ]),
                     _: 2
                   }, 1040, ["onClick"])
                 ]),
                 _: 2
-              }, 1040, ["count"])) : (e(), o(l, s({
+              }, 1040, ["count"])) : (e(), o(c, r({
                 key: 1,
                 ref_for: !0
               }, t.attrs, {
-                onClick: k((r) => C(t.url), ["stop"])
+                onClick: k((s) => v(t.url), ["stop"])
               }), {
                 default: n(() => [
-                  d(a(t.text), 1)
+                  l(a(t.text), 1)
                 ]),
                 _: 2
               }, 1040, ["onClick"]))
-            ])) : (e(), c("span", F, [
-              t.badge ? (e(), o(w, s({
+            ])) : (e(), p("span", q, [
+              t.badge ? (e(), o(h, r({
                 key: 0,
                 count: t.badgeValue,
                 ref_for: !0
               }, t.badgeAttrs), {
                 default: n(() => [
-                  i(l, s({ ref_for: !0 }, t.attrs, {
-                    onClick: k((r) => _("click", t.event), ["stop"])
+                  b(c, r({ ref_for: !0 }, t.attrs, {
+                    onClick: k((s) => _("click", t.event), ["stop"])
                   }), {
                     default: n(() => [
-                      d(a(t.text), 1)
+                      l(a(t.text), 1)
                     ]),
                     _: 2
                   }, 1040, ["onClick"])
                 ]),
                 _: 2
-              }, 1040, ["count"])) : (e(), o(l, s({
+              }, 1040, ["count"])) : t.popcon ? (e(), o(E, r({
                 key: 1,
+                theme: "default",
+                content: t.popconValue,
                 ref_for: !0
-              }, t.attrs, {
-                onClick: k((r) => _("click", t.event), ["stop"])
+              }, t.popconAttrs, {
+                onConfirm: (s) => _("click", t.event)
               }), {
                 default: n(() => [
-                  d(a(t.text), 1)
+                  b(c, r({ ref_for: !0 }, t.attrs), {
+                    default: n(() => [
+                      l(a(t.text), 1)
+                    ]),
+                    _: 2
+                  }, 1040)
+                ]),
+                _: 2
+              }, 1040, ["content", "onConfirm"])) : (e(), o(c, r({
+                key: 2,
+                ref_for: !0
+              }, t.attrs, {
+                onClick: k((s) => _("click", t.event), ["stop"])
+              }), {
+                default: n(() => [
+                  l(a(t.text), 1)
                 ]),
                 _: 2
               }, 1040, ["onClick"]))
             ]))
-          ]))), 128)),
-          (e(!0), c(B, null, N(u.config.dropdown, (t, g) => (e(), o(v, {
+          ])), [
+            [w, t.authKey]
+          ])), 128)),
+          (e(!0), p(A, null, N(f.config.dropdown, (t, g) => (e(), o(x, {
             key: g,
             class: "base-table-content__btn",
             options: t.options,
-            onClick: f[1] || (f[1] = (r) => _("click", r))
+            onClick: i[1] || (i[1] = (s) => _("click", s))
           }, {
             default: n(() => [
-              i(l, s({ ref_for: !0 }, t.btn.attrs), {
+              D((e(), o(c, r({ ref_for: !0 }, t.btn.attrs), {
                 default: n(() => [
-                  d(a(t.btn.text) + " ", 1),
-                  t.btn.icn ? (e(), o(x, {
+                  l(a(t.btn.text) + " ", 1),
+                  t.btn.icn ? (e(), o(C, {
                     key: 0,
                     style: { "margin-top": "2px", "margin-left": "2px" },
                     name: t.btn.icn
-                  }, null, 8, ["name"])) : A("", !0)
+                  }, null, 8, ["name"])) : P("", !0)
                 ]),
                 _: 2
-              }, 1040)
+              }, 1040)), [
+                [w, t.btn.authKey]
+              ])
             ]),
             _: 2
           }, 1032, ["options"]))), 128)),
-          h(p.$slots, "btns")
+          B(u.$slots, "btns")
         ])
       ]);
     };
   }
 });
 export {
-  M as default
+  I as default
 };
