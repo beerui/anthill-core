@@ -9,7 +9,7 @@
       <slot></slot>
     </div>
     <div class="base-table-content">
-      <span v-for="(item, index) in props.config.btn" :key="index" class="base-table-content__btn">
+      <span v-for="(item, index) in props.config.btn" :key="index" class="base-table-content__btn" v-has="item.authKey">
         <t-dropdown
           v-if="item.cate === 'dropdown'"
           class="base-table-content__btn"
@@ -31,6 +31,16 @@
           <t-badge v-if="item.badge" :count="item.badgeValue" v-bind="item.badgeAttrs">
             <t-button v-bind="item.attrs" @click.stop="emits('click', item.event)">{{ item.text }}</t-button>
           </t-badge>
+          <t-popconfirm
+            v-else-if="item.popcon"
+
+            theme="default"
+            :content="item.popconValue"
+            v-bind="item.popconAttrs"
+            @confirm="emits('click', item.event)"
+          >
+            <t-button v-bind="item.attrs">{{ item.text }}</t-button>
+          </t-popconfirm>
           <t-button v-else v-bind="item.attrs" @click.stop="emits('click', item.event)">{{ item.text }}</t-button>
         </span>
       </span>
@@ -41,12 +51,12 @@
         :options="item.options"
         @click="(dropdownItem: DropdownOption)=>emits('click', dropdownItem)"
       >
-        <t-button v-bind="item.btn.attrs">
+        <t-button v-bind="item.btn.attrs" v-has="item.btn.authKey">
           {{ item.btn.text }}
           <t-icon v-if="item.btn.icn" style="margin-top: 2px; margin-left: 2px" :name="item.btn.icn"></t-icon>
         </t-button>
       </t-dropdown>
-      <slot name="btns"/>
+      <slot name="btns" />
     </div>
   </div>
 </template>
