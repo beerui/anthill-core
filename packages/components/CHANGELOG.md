@@ -1,5 +1,11 @@
 # @brewer/anthill-core
 
+## 0.1.15
+
+### Patch Changes
+
+- 新增主题
+
 ## 0.1.14
 
 ### Patch Changes
