@@ -10,6 +10,15 @@
   width: 100%;
 }
 
+.theme-search-end {
+  flex: 1;
+  max-width: none;
+}
+
+.text-right {
+  text-align: right;
+}
+
 .base-table-content .t-button + .t-button {
   margin-left: 0;
 }

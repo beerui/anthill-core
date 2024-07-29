@@ -1,100 +1,138 @@
-import { defineComponent as v, resolveComponent as r, openBlock as s, createBlock as c, withCtx as t, createVNode as n, createElementBlock as _, Fragment as C, renderList as k, renderSlot as f, createCommentVNode as y, mergeProps as w, normalizeStyle as $, createTextVNode as g } from "vue";
-import x from "./BaseFormItem.vue.js";
-const U = {
+import { defineComponent as v, resolveComponent as u, openBlock as n, createBlock as d, withCtx as a, createVNode as l, createElementBlock as h, Fragment as k, renderList as A, renderSlot as c, createCommentVNode as m, mergeProps as $, normalizeStyle as g, createTextVNode as y } from "vue";
+import C from "./BaseFormItem.vue.js";
+const P = {
   key: 0,
   class: "base-search-operator"
-}, P = /* @__PURE__ */ v({
+}, w = {
+  key: 0,
+  class: "base-search-operator"
+}, F = /* @__PURE__ */ v({
   name: "ABaseSearchBar",
   __name: "BaseSearchBar",
-  props: ["hiddenBtn", "btnSpan", "btnBoxStyle", "config"],
+  props: ["hiddenBtn", "btnSpan", "btnBoxStyle", "config", "projectTheme"],
   emits: ["reset", "submit"],
-  setup(o, { emit: h }) {
-    const d = h, V = (u, a) => {
-      a.trigger === "immediately" && d("submit");
+  setup(t, { emit: V }) {
+    const b = V, _ = (o, r) => {
+      r.trigger === "immediately" && b("submit");
     };
-    return (u, a) => {
-      const i = r("t-form-item"), p = r("t-col"), m = r("t-row"), b = r("t-button"), B = r("t-form");
-      return s(), c(B, {
+    return (o, r) => {
+      const B = u("t-form-item"), f = u("t-col"), p = u("t-button"), i = u("t-row"), S = u("t-form");
+      return n(), d(S, {
         "label-width": 80,
         colon: "",
-        onReset: a[0] || (a[0] = (e) => d("reset")),
-        onSubmit: a[1] || (a[1] = (e) => d("submit"))
+        onReset: r[0] || (r[0] = (e) => b("reset")),
+        onSubmit: r[1] || (r[1] = (e) => b("submit"))
       }, {
-        default: t(() => [
-          n(m, { gutter: [24, 24] }, {
-            default: t(() => [
-              n(p, {
-                span: 12 - (o.btnSpan || 2)
+        default: a(() => [
+          l(i, { gutter: [24, 24] }, {
+            default: a(() => [
+              l(f, {
+                span: t.projectTheme === "AI_PLATFORM" ? 12 : 12 - (t.btnSpan || 2)
               }, {
-                default: t(() => [
-                  n(m, { gutter: [24, 24] }, {
-                    default: t(() => [
-                      (s(!0), _(C, null, k(o.config || [], (e, S) => (s(), c(p, {
-                        key: S,
-                        span: e.span || 4
+                default: a(() => [
+                  l(i, { gutter: [24, 24] }, {
+                    default: a(() => [
+                      (n(!0), h(k, null, A(t.config || [], (e, T) => (n(), d(f, {
+                        key: T,
+                        span: t.projectTheme === "AI_PLATFORM" ? e.span || 3 : e.span || 4
                       }, {
-                        default: t(() => [
-                          e.type === "SLOT" ? (s(), c(i, {
+                        default: a(() => [
+                          e.type === "SLOT" ? (n(), d(B, {
                             key: 0,
                             label: e == null ? void 0 : e.label,
                             "label-width": e == null ? void 0 : e.labelWidth,
                             name: e == null ? void 0 : e.name
                           }, {
-                            default: t(() => [
-                              f(u.$slots, e.name, { data: e })
+                            default: a(() => [
+                              c(o.$slots, e.name, { data: e })
                             ]),
                             _: 2
-                          }, 1032, ["label", "label-width", "name"])) : y("", !0),
-                          n(x, w({ ref_for: !0 }, e.attrs, {
+                          }, 1032, ["label", "label-width", "name"])) : m("", !0),
+                          l(C, $({ ref_for: !0 }, e.attrs, {
                             modelValue: e.value,
-                            "onUpdate:modelValue": (l) => e.value = l,
+                            "onUpdate:modelValue": (s) => e.value = s,
                             typeValue: e.typeValue,
-                            "onUpdate:typeValue": (l) => e.typeValue = l,
+                            "onUpdate:typeValue": (s) => e.typeValue = s,
                             config: e,
-                            onChange: (l) => V(l, e)
+                            onChange: (s) => _(s, e)
                           }), null, 16, ["modelValue", "onUpdate:modelValue", "typeValue", "onUpdate:typeValue", "config", "onChange"])
                         ]),
                         _: 2
-                      }, 1032, ["span"]))), 128))
+                      }, 1032, ["span"]))), 128)),
+                      t.projectTheme === "AI_PLATFORM" ? (n(), d(f, {
+                        key: 0,
+                        span: t.btnSpan || 3,
+                        class: "theme-search-end text-right",
+                        style: g(t.btnBoxStyle || null)
+                      }, {
+                        default: a(() => [
+                          c(o.$slots, "btnPre"),
+                          t.hiddenBtn ? m("", !0) : (n(), h("div", P, [
+                            l(p, {
+                              type: "reset",
+                              variant: "outline",
+                              theme: "primary"
+                            }, {
+                              default: a(() => [
+                                y("重置")
+                              ]),
+                              _: 1
+                            }),
+                            l(p, {
+                              class: "ml-15",
+                              type: "submit",
+                              theme: "primary"
+                            }, {
+                              default: a(() => [
+                                y("查询")
+                              ]),
+                              _: 1
+                            })
+                          ])),
+                          c(o.$slots, "default")
+                        ]),
+                        _: 3
+                      }, 8, ["span", "style"])) : m("", !0)
                     ]),
                     _: 3
                   })
                 ]),
                 _: 3
               }, 8, ["span"]),
-              n(p, {
-                span: o.btnSpan || 2,
+              t.projectTheme !== "AI_PLATFORM" ? (n(), d(f, {
+                key: 0,
+                span: t.btnSpan || 2,
                 class: "text-right",
-                style: $(o.btnBoxStyle || null)
+                style: g(t.btnBoxStyle || null)
               }, {
-                default: t(() => [
-                  f(u.$slots, "btnPre"),
-                  o.hiddenBtn ? y("", !0) : (s(), _("div", U, [
-                    n(b, {
+                default: a(() => [
+                  c(o.$slots, "btnPre"),
+                  t.hiddenBtn ? m("", !0) : (n(), h("div", w, [
+                    l(p, {
                       type: "submit",
                       theme: "primary"
                     }, {
-                      default: t(() => [
-                        g("查询")
+                      default: a(() => [
+                        y("查询")
                       ]),
                       _: 1
                     }),
-                    n(b, {
+                    l(p, {
                       class: "ml-15",
                       type: "reset",
                       variant: "base",
                       theme: "default"
                     }, {
-                      default: t(() => [
-                        g("重置")
+                      default: a(() => [
+                        y("重置")
                       ]),
                       _: 1
                     })
                   ])),
-                  f(u.$slots, "default")
+                  c(o.$slots, "default")
                 ]),
                 _: 3
-              }, 8, ["span", "style"])
+              }, 8, ["span", "style"])) : m("", !0)
             ]),
             _: 3
           })
@@ -105,5 +143,5 @@ const U = {
   }
 });
 export {
-  P as default
+  F as default
 };

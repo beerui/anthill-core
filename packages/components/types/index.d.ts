@@ -41,6 +41,7 @@ declare const __VLS_component_3: DefineComponent<Readonly<{
     hiddenBtn?: any;
     btnSpan?: any;
     btnBoxStyle?: any;
+    projectTheme?: any;
 }>, {}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
     submit: (...args: any[]) => void;
     reset: (...args: any[]) => void;
@@ -49,6 +50,7 @@ declare const __VLS_component_3: DefineComponent<Readonly<{
     hiddenBtn?: any;
     btnSpan?: any;
     btnBoxStyle?: any;
+    projectTheme?: any;
 }>>> & {
     onReset?: (...args: any[]) => any;
     onSubmit?: (...args: any[]) => any;
@@ -57,6 +59,7 @@ declare const __VLS_component_3: DefineComponent<Readonly<{
     readonly hiddenBtn?: any;
     readonly btnSpan?: any;
     readonly btnBoxStyle?: any;
+    readonly projectTheme?: any;
 }, {}>;
 
 declare type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
@@ -236,6 +239,7 @@ export declare const ABaseSearchBar: SFCWithInstall<{
         hiddenBtn?: any;
         btnSpan?: any;
         btnBoxStyle?: any;
+        projectTheme?: any;
     }>>> & {
         onReset?: (...args: any[]) => any;
         onSubmit?: (...args: any[]) => any;
@@ -247,6 +251,7 @@ export declare const ABaseSearchBar: SFCWithInstall<{
         hiddenBtn?: any;
         btnSpan?: any;
         btnBoxStyle?: any;
+        projectTheme?: any;
     }>>> & {
         onReset?: (...args: any[]) => any;
         onSubmit?: (...args: any[]) => any;
@@ -255,6 +260,7 @@ export declare const ABaseSearchBar: SFCWithInstall<{
         readonly hiddenBtn?: any;
         readonly btnSpan?: any;
         readonly btnBoxStyle?: any;
+        readonly projectTheme?: any;
     }, true, {}, {}, {
         P: {};
         B: {};
@@ -267,6 +273,7 @@ export declare const ABaseSearchBar: SFCWithInstall<{
         hiddenBtn?: any;
         btnSpan?: any;
         btnBoxStyle?: any;
+        projectTheme?: any;
     }>>> & {
         onReset?: (...args: any[]) => any;
         onSubmit?: (...args: any[]) => any;
@@ -275,6 +282,7 @@ export declare const ABaseSearchBar: SFCWithInstall<{
         readonly hiddenBtn?: any;
         readonly btnSpan?: any;
         readonly btnBoxStyle?: any;
+        readonly projectTheme?: any;
     }>;
     __isFragment?: never;
     __isTeleport?: never;
@@ -284,6 +292,7 @@ export declare const ABaseSearchBar: SFCWithInstall<{
     hiddenBtn?: any;
     btnSpan?: any;
     btnBoxStyle?: any;
+    projectTheme?: any;
 }>>> & {
     onReset?: (...args: any[]) => any;
     onSubmit?: (...args: any[]) => any;
@@ -295,6 +304,7 @@ export declare const ABaseSearchBar: SFCWithInstall<{
     readonly hiddenBtn?: any;
     readonly btnSpan?: any;
     readonly btnBoxStyle?: any;
+    readonly projectTheme?: any;
 }, {}, string, {}> & VNodeProps & AllowedComponentProps & ComponentCustomProps & (new () => {
     $slots: Partial<Record<any, (_: {
         data: any;
